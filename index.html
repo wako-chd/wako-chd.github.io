@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAKO Chandigarh Kickboxing Championship & Combat Fitness Club</title>
+  <meta name="description" content="Where style meets strength — official WAKO Chandigarh Kickboxing Championship, combat fitness, certified training programs, podcasts, and memberships.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Bebas Neue + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Swiper 11 Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main Dark & Red Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=36">
+</head>
+<body>
+
+  <!-- ===================================================================
+       FLOATING GLASS DYNAMIC ISLAND NAVBAR
+       =================================================================== -->
+  <header class="floating-nav-container" id="navContainer">
+    <nav class="dynamic-island-nav" id="dynamicNav" aria-label="Main Navigation">
+      <!-- Island Logo & Brand -->
+      <a href="#home" class="island-brand" id="islandBrand" title="WAKO Chandigarh Kickboxing">
+        <img src="assets/logo.png" alt="WAKO Chandigarh Logo" class="island-logo-img">
+        <span class="island-brand-text">WAKO <span>CHANDIGARH</span></span>
+      </a>
+
+      <!-- Navigation Links: About, Gallery, Podcasts -->
+      <div class="island-menu-wrapper" id="islandMenuWrapper">
+        <ul class="island-nav-menu" id="navMenu">
+          <li><a href="#about" class="island-nav-link">About</a></li>
+          <li><a href="#gallery" class="island-nav-link">Gallery</a></li>
+          <li><a href="#pathway" class="island-nav-link">Pathway</a></li>
+          <li><a href="#combat-lab" class="island-nav-link">Combat Lab</a></li>
+          <li><a href="#podcasts" class="island-nav-link">Podcasts</a></li>
+          <li class="mobile-only-link"><a href="#contact" class="island-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us Button (Persistent in both Open & Collapsed Dynamic Island) -->
+      <a href="#contact" class="island-contact-btn" id="islandContactBtn">
+        <span class="contact-btn-label">Contact Us</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="island-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION (Matching Reference Image)
+         =================================================================== -->
+    <!-- ===================================================================
+         HERO SECTION (Video Background with Loading State Fallback)
+         =================================================================== -->
+    <section class="hero-section is-loading" id="home">
+      <!-- Full Hero Background Video (Loops seamlessly with no text on top) -->
+      <div class="hero-video-bg-wrap" id="heroVideoBgWrap">
+        <video 
+          id="heroBgVideo" 
+          class="hero-bg-video" 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          webkit-playsinline 
+          preload="auto"
+          poster="assets/hero_ring_spotlight.jpg"
+        >
+          <source src="assets/WAKO Chandigarh Hero 9x16.mp4" type="video/mp4" media="(max-width: 768px)">
+          <source src="assets/WAKO Chandigarh Hero.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-video-vignette"></div>
+      </div>
+
+      <!-- Hero Content Container (Visible in Loading State, Fades Out When Video Plays) -->
+      <div class="container hero-content-container" id="heroContentContainer">
+        <div class="hero-grid" id="heroGrid">
+          <!-- Hero Left Column -->
+          <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+            <div class="hero-script-tag">Shape Your</div>
+            <h1 class="hero-title-main">Dream Body</h1>
+            <p class="hero-desc">
+              Where style meets strength &mdash; a modern fitness club and official combat championship academy for perfection seekers and title contenders.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#training" class="btn btn-red-pill">
+                Explore Disciplines &rarr;
+              </a>
+              <a href="#registration" class="btn btn-dark-pill">
+                Register Athlete &rarr;
+              </a>
+            </div>
+
+            <!-- Championship Countdown Box in Deep Charcoal -->
+            <div class="countdown-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="countdown-label">
+                <span>Next Official Weigh-In & Bouts</span>
+                <span class="live-dot">Official Countdown</span>
+              </div>
+              <div class="countdown-digits">
+                <div class="countdown-unit">
+                  <span class="countdown-val" id="cdDays">42</span>
+                  <span class="countdown-text">Days</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-val" id="cdHours">14</span>
+                  <span class="countdown-text">Hours</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-val" id="cdMins">35</span>
+                  <span class="countdown-text">Minutes</span>
+                </div>
+                <div class="countdown-unit">
+                  <span class="countdown-val" id="cdSecs">20</span>
+                  <span class="countdown-text">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Athletic Cutout with Red Rope -->
+          <div class="hero-visual" data-aos="zoom-in" data-aos-delay="300">
+            <div class="hero-cutout-wrap">
+              <img src="assets/hero_athlete_rope.jpg" alt="Athletic Fitness Coach and Fighter with Red Battle Ropes" class="hero-cutout-img">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-pill floating-pill-left">
+              <div class="icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <span class="pill-val">WAKO Certified</span>
+                <span class="pill-sub">Olympic Standards</span>
+              </div>
+            </div>
+
+            <div class="floating-pill floating-pill-right">
+              <div class="icon-box">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <span class="pill-val">50+ Medals</span>
+                <span class="pill-sub">National Roster</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         1. ABOUT WAKO SECTION (Clear & Creative Showcase)
+         =================================================================== -->
+    <section class="wako-showcase-section" id="wako-showcase">
+      <div class="container">
+        <div class="wako-showcase-grid" data-aos="fade-up" data-aos-duration="800">
+          
+          <!-- LEFT: 3 IMAGES SHOWCASE (Clean & Creative Collage) -->
+          <div class="wako-trio-gallery">
+            <div class="wako-gallery-main">
+              <img src="assets/sparring.jpg" alt="WAKO Kickboxing Sparring Action" class="wako-gallery-img">
+            </div>
+            <div class="wako-gallery-stacked">
+              <div class="wako-gallery-sub">
+                <img src="assets/boxing_gloves.jpg" alt="Official Combat Gloves & Equipment" class="wako-gallery-img">
+              </div>
+              <div class="wako-gallery-sub">
+                <img src="assets/female_fighter.jpg" alt="Fighter Conditioning & Combat Form" class="wako-gallery-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: TEXT ABOUT WAKO + ACTIONS -->
+          <div class="wako-showcase-info">
+            <span class="section-tag-red">ABOUT WAKO</span>
+            
+            <h2 class="wako-display-title">
+              WORLD ASSOCIATION OF <br>
+              <span class="text-red">KICKBOXING ORGANIZATIONS</span>
+            </h2>
+
+            <p class="wako-clean-desc">
+              WAKO is a leading international organization dedicated to the <strong>promotion and development of kickboxing worldwide.</strong>
+            </p>
+
+            <p class="wako-clean-subtext">
+              It supports athletes, coaches, referees, and national federations by organizing international competitions, setting rules and standards, and encouraging fair play, discipline, and sportsmanship, making kickboxing accessible to all skill levels while promoting fitness, respect, and excellence.
+            </p>
+
+            <!-- Minimalist Pillars Strip -->
+            <div class="wako-quick-tags">
+              <span class="quick-tag"><i class="fa-solid fa-globe"></i> International Competitions</span>
+              <span class="quick-tag"><i class="fa-solid fa-scale-balanced"></i> Rules & Standards</span>
+              <span class="quick-tag"><i class="fa-solid fa-handshake"></i> Fair Play & Discipline</span>
+            </div>
+
+            <!-- Action Buttons: Know More & Call Us -->
+            <div class="wako-buttons-group">
+              <a href="#about" class="btn btn-white-pill" id="wakoKnowMoreBtn">
+                <span>KNOW MORE</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="tel:+916239662890" class="btn btn-outline-pill" id="wakoCallUsBtn">
+                <i class="fa-solid fa-phone"></i>
+                <span>CALL US</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         1.5 FEDERATION LEADERSHIP (President & Vice President Vision)
+         =================================================================== -->
+    <section class="leadership-section" id="association-leadership">
+      <div class="container">
+        <div class="leadership-header" data-aos="fade-up">
+          <span class="section-tag-red"><i class="fa-solid fa-crown"></i> Association Leadership</span>
+          <h2 class="wako-display-title">
+            GOVERNING BODY & <br>
+            <span class="text-red">EXECUTIVE VISION</span>
+          </h2>
+          <p class="wako-clean-subtext" style="max-width: 720px; margin: 0 auto; text-align: center;">
+            Leading with institutional integrity, modern athletic governance, and an uncompromising mission to develop world-stage kickboxing champions from Chandigarh.
+          </p>
+        </div>
+
+        <div class="leadership-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Card 1: President - Adit Goel -->
+          <div class="exec-card president-card">
+            <div>
+              <div class="exec-card-header">
+                <div class="exec-avatar-frame">
+                  <img src="assets/president_adit_goel.jpg" alt="Adit Goel - President" class="exec-avatar-img">
+                  <span class="avatar-badge avatar-badge-president" title="President"><i class="fa-solid fa-crown"></i></span>
+                </div>
+                <div class="exec-header-info">
+                  <span class="exec-role-pill president-pill">
+                    <i class="fa-solid fa-crown"></i> President
+                  </span>
+                  <h3 class="exec-name">Adit Goel</h3>
+                  <p class="exec-designation">President &bull; WAKO Chandigarh</p>
+                </div>
+              </div>
+
+              <div class="exec-vision-box">
+                <div class="exec-vision-label">
+                  <i class="fa-solid fa-quote-left"></i> Strategic Presidential Vision
+                </div>
+                <p class="exec-vision-text">
+                  "Our mission is to establish Chandigarh as India’s foremost powerhouse for combat sports excellence through world-class training ecosystems, transparent athlete governance, and Olympic-grade safety standards."
+                </p>
+              </div>
+            </div>
+
+            <div class="exec-pillars-row">
+              <span class="exec-pillar-tag"><i class="fa-solid fa-building-columns"></i> Grants</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-medal"></i> Olympic Pathway</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-shield-halved"></i> Athlete Welfare</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Vice President - Rudal Kumar -->
+          <div class="exec-card vp-card">
+            <div>
+              <div class="exec-card-header">
+                <div class="exec-avatar-frame">
+                  <img src="assets/vice_president_rudal_kumar.jpg" alt="Rudal Kumar - Vice President" class="exec-avatar-img">
+                  <span class="avatar-badge avatar-badge-vp" title="Vice President"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="exec-header-info">
+                  <span class="exec-role-pill vp-pill">
+                    <i class="fa-solid fa-star"></i> Vice President
+                  </span>
+                  <h3 class="exec-name">Rudal Kumar</h3>
+                  <p class="exec-designation">Vice President &bull; WAKO Chandigarh</p>
+                </div>
+              </div>
+
+              <div class="exec-vision-box">
+                <div class="exec-vision-label">
+                  <i class="fa-solid fa-quote-left"></i> Grassroots & Athletic Vision
+                </div>
+                <p class="exec-vision-text">
+                  "We are dedicated to expanding kickboxing across every school and district so talent alone dictates destiny. Through accredited referee seminars and structured clinics, we instill mental resilience in every fighter."
+                </p>
+              </div>
+            </div>
+
+            <div class="exec-pillars-row">
+              <span class="exec-pillar-tag"><i class="fa-solid fa-bullseye"></i> Scouting</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-scale-balanced"></i> Fair Play</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-people-group"></i> Youth Power</span>
+            </div>
+          </div>
+
+          <!-- Card 3: General Secretary - Rustampreet Singh -->
+          <div class="exec-card sec-card">
+            <div>
+              <div class="exec-card-header">
+                <div class="exec-avatar-frame">
+                  <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh - General Secretary" class="exec-avatar-img">
+                  <span class="avatar-badge avatar-badge-sec" title="General Secretary"><i class="fa-solid fa-bolt"></i></span>
+                </div>
+                <div class="exec-header-info">
+                  <span class="exec-role-pill sec-pill">
+                    <i class="fa-solid fa-bolt"></i> General Secretary
+                  </span>
+                  <h3 class="exec-name">Rustampreet Singh</h3>
+                  <p class="exec-designation">General Secretary &amp; Head Coach</p>
+                </div>
+              </div>
+
+              <div class="exec-vision-box">
+                <div class="exec-vision-label">
+                  <i class="fa-solid fa-quote-left"></i> Technical & Combat Vision
+                </div>
+                <p class="exec-vision-text">
+                  "Combat excellence is forged in biomechanical precision and iron will. We provide an Olympic-standard progression framework and high-performance sparring camps to conquer national championship podiums."
+                </p>
+              </div>
+            </div>
+
+            <div class="exec-pillars-row">
+              <span class="exec-pillar-tag"><i class="fa-solid fa-hand-fist"></i> Technical Progression</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-medal"></i> National Medalist</span>
+              <span class="exec-pillar-tag"><i class="fa-solid fa-award"></i> WAKO Referee</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 2: "THE POWER BEHIND YOUR VISION" (ABOUT US)
+         =================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-header-grid" data-aos="fade-up">
+          <div class="about-header-left">
+            <span class="badge-red">About Us</span>
+            <h2>THE POWER BEHIND YOUR <span class="text-red">VISION</span></h2>
+          </div>
+          <div class="about-header-right">
+            <p>
+              Revamp & WAKO Chandigarh is committed to helping you reach your fitness and wellness goals with expert coaching, personalized workout plans, and tailored combat sports guidance.
+            </p>
+            <div class="vision-mission-grid">
+              <div class="vision-card">
+                <span class="vm-tag">OUR VISION</span>
+                <p>Empowering everyone to embrace strength, health, and a fulfilling lifestyle through martial arts and fitness.</p>
+              </div>
+              <div class="mission-card">
+                <span class="vm-tag">OUR MISSION</span>
+                <p>Empowering individuals with fitness solutions that create strong, lasting habits and championship titles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cinematic Video Showcase Banner with Interactive Reel Experience -->
+        <div class="cinematic-banner-wrap" id="cinematicBanner" data-aos="zoom-in" data-aos-duration="900">
+          <img src="assets/power_lab_video_thumb.jpg?v=1" alt="WAKO Kickboxing Musical Forms Showcase Reel" class="cinematic-banner-img">
+          
+          <!-- Cinematic Lighting Overlays -->
+          <div class="cinematic-overlay"></div>
+          <div class="cinematic-vignette"></div>
+          <div class="cinematic-ambient-glow"></div>
+
+          <!-- Top Meta Bar -->
+          <div class="cinematic-header-bar">
+            <span class="cinematic-kicker">
+              <span class="cinematic-live-dot"></span>
+              COMBAT POWER LAB &bull; STRENGTH &amp; CONDITIONING
+            </span>
+            <span class="cinematic-tag-pill">
+              <i class="fa-solid fa-shield-halved"></i> IOC Standards
+            </span>
+          </div>
+
+          <!-- Centerpiece Glowing Pulsing Play Trigger -->
+          <div class="cinematic-play-center">
+            <button class="cinematic-play-btn" id="playCinematicVideoBtn" aria-label="Play Training Showcase Video">
+              <span class="cinematic-play-ring"></span>
+              <span class="cinematic-play-ring delay"></span>
+              <span class="cinematic-play-core">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span class="cinematic-play-text">PLAY SHOWCASE REEL</span>
+            </button>
+          </div>
+
+          <!-- Bottom Editorial Title & Meta Bar -->
+          <div class="cinematic-bottom-bar">
+            <div class="cinematic-title-wrap">
+              <h3 class="cinematic-title">POWER &amp; BIOMECHANICS LAB</h3>
+              <p class="cinematic-subtitle">
+                Forging champions through Olympic lifting, high-velocity tatami striking, and unbreakable mental stamina.
+              </p>
+            </div>
+            <div class="cinematic-stats-wrap">
+              <div class="cinematic-stat-item">
+                <strong>50+</strong>
+                <span>Medalists</span>
+              </div>
+              <div class="cinematic-stat-divider"></div>
+              <div class="cinematic-stat-item">
+                <strong>100%</strong>
+                <span>Olympic Drills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: "WHY WE'RE THE RIGHT CHOICE FOR YOU"
+         =================================================================== -->
+    <section class="why-us-section" id="why-us">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red">Why Choose Us</span>
+          <h2 class="section-title">Why We're the Right <span class="text-red">Choice for You</span></h2>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- Left Column Features -->
+          <div class="why-features-col" data-aos="fade-right">
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Certified Trainers</h4>
+                <p>Led by certified national coaches guiding your form, agility, and performance every session.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Best Equipment</h4>
+                <p>World-class rings, tatami mats, Olympic weights, and calibrated 10oz combat gloves.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Personalized Solutions</h4>
+                <p>Tailored training regimens tailored to your body type, stamina, and target goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Visual: Athlete with Dumbbells -->
+          <div class="why-center-visual" data-aos="zoom-in" data-aos-delay="200">
+            <div class="why-center-img-wrap">
+              <img src="assets/wako_officials_delegation.jpg?v=1" alt="WAKO India Official Referees and Delegation Team">
+            </div>
+          </div>
+
+          <!-- Right Column Features -->
+          <div class="why-features-col" data-aos="fade-left">
+            <div class="why-feature-item item-right">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Authentic Federation</h4>
+                <p>Officially affiliated with WAKO India for direct trials, state rankings, and international titles.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item item-right">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Health and Wellness</h4>
+                <p>Structured weight management, joint mobility, cardiovascular health, and post-workout recovery.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item item-right">
+              <div class="why-feature-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div class="why-feature-text">
+                <h4>Convenient Batches</h4>
+                <p>Flexible morning, evening, and weekend slots built for working professionals and students.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+          <a href="#registration" class="btn btn-red-pill btn-lg" id="whyUsGetStartedBtn">
+            Get Started &gt;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: "ENJOY BESPOKE TRAINING CHOICES" & DISCIPLINES
+         =================================================================== -->
+    <section class="bespoke-training-section" id="training">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red">Elevate Your Fitness</span>
+          <h2 class="section-title">Enjoy bespoke <span class="text-red">training</span> choices</h2>
+        </div>
+
+        <!-- 2 Dynamic Showcase Cards -->
+        <div class="bespoke-cards-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="bespoke-card">
+            <div>
+              <h3>Workouts That Ignite Energy</h3>
+              <p>Join our dynamic group classes, from Body pump and Tatami sparring to RPM conditioning, for intense and inspiring workouts.</p>
+            </div>
+            <a href="#contact" class="btn btn-red-pill btn-sm">Join a class today</a>
+          </div>
+
+          <div class="bespoke-card">
+            <div>
+              <h3>Tailored Workouts for Combat</h3>
+              <p>Work with certified coaches for personalized combat and strength plans, achieving weight goals and tournament readiness faster.</p>
+            </div>
+            <a href="#contact" class="btn btn-red-pill btn-sm">Get Personal Coaching</a>
+          </div>
+        </div>
+
+        <!-- Carousel for WAKO Disciplines -->
+        <div class="carousel-nav-header" data-aos="fade-up">
+          <div>
+            <h3 style="font-size: 1.6rem; color: #fff;">Official Championship Disciplines</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Explore official Tatami and Ring sports categories</p>
+          </div>
+          <div class="carousel-custom-controls">
+            <button class="carousel-btn disc-prev" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="carousel-btn disc-next" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="swiper disciplinesSwiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <!-- 1. Point Fighting -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/sparring.jpg" alt="Point Fighting Sparring" class="disc-card-img">
+                  <span class="disc-category-tag">Tatami Division</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">Point Fighting</h3>
+                  <p class="disc-card-desc">
+                    High-speed tactical discipline where fighters score points with well-controlled punches and kicks. Fast reflex scoring.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-stopwatch"></i> 2 x 2 Min</span>
+                    <span><i class="fa-solid fa-shield"></i> Light Contact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Light Contact -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/kids_martial_arts.jpg" alt="Light Contact Martial Arts" class="disc-card-img">
+                  <span class="disc-category-tag">Tatami Division</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">Light Contact</h3>
+                  <p class="disc-card-desc">
+                    Continuous technical sparring where fighters exchange strikes with cardio endurance, clean combos, and ring awareness.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-stopwatch"></i> Continuous Action</span>
+                    <span><i class="fa-solid fa-bolt"></i> Controlled Power</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Kick Light -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/female_fighter.jpg" alt="Kick Light Division Athlete" class="disc-card-img">
+                  <span class="disc-category-tag">Tatami Division</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">Kick Light</h3>
+                  <p class="disc-card-desc">
+                    Combines controlled light contact upper striking with low kicks to the thigh. The ideal stepping stone for low kick defense.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-stopwatch"></i> Low Kicks Permitted</span>
+                    <span><i class="fa-solid fa-award"></i> Tatami Mat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Full Contact -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/ring_action.jpg" alt="Full Contact Ring Kickboxing" class="disc-card-img">
+                  <span class="disc-category-tag">Ring Sport</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">Full Contact</h3>
+                  <p class="disc-card-desc">
+                    Fought inside a boxing ring where full-power strikes above the waist are permitted. Decided by judges or knockouts.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-ring"></i> Boxing Ring</span>
+                    <span><i class="fa-solid fa-fire"></i> Full Impact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Low Kick -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/fighter_punch.jpg" alt="Low Kick Style Action" class="disc-card-img">
+                  <span class="disc-category-tag">Ring Sport</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">Low Kick</h3>
+                  <p class="disc-card-desc">
+                    Ring sport allowing heavy low kicks to the inner and outer thigh alongside full contact punches. High intensity division.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-stopwatch"></i> 3 x 2 Min</span>
+                    <span><i class="fa-solid fa-shoe-prints"></i> Shin Contact</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. K-1 Rules -->
+            <div class="swiper-slide">
+              <div class="discipline-card">
+                <div class="disc-card-img-wrap">
+                  <img src="assets/championship_belt.jpg" alt="K-1 Style Championship Belt" class="disc-card-img">
+                  <span class="disc-category-tag">Ring Sport</span>
+                </div>
+                <div class="disc-card-body">
+                  <h3 class="disc-card-title">K-1 Style Rules</h3>
+                  <p class="disc-card-desc">
+                    The pinnacle of dynamic ring kickboxing: permits low kicks, spinning backfists, and explosive single knee strikes.
+                  </p>
+                  <div class="disc-meta-specs">
+                    <span><i class="fa-solid fa-trophy"></i> Elite Division</span>
+                    <span><i class="fa-solid fa-star"></i> Pro Rules</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination disc-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PRE-TRAINING CTA (Matching Screenshot)
+         =================================================================== -->
+    <section class="pre-footer-cta">
+      <div class="container">
+        <div class="pre-footer-cta-inner" data-aos="fade-up">
+          <p class="pre-footer-tagline">Start your fitness journey &mdash; let's take it together.</p>
+          <h2 class="pre-footer-title">
+            Are you <span class="text-red">ready</span> to reach your <span class="text-red">fitness goals?</span>
+          </h2>
+          <a href="#registration" class="btn btn-red-pill btn-lg">
+            Get Started Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: CERTIFIED COACHES & TRAINERS (Elite Faculty Showcase)
+         =================================================================== -->
+    <section class="coaches-section" id="coaches">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-medal"></i> Master Coaching Faculty</span>
+          <h2 class="section-title">Certified Coaches & <span class="text-red">Trainers</span></h2>
+          <p class="section-subtitle">
+            Train under world-recognized mentors, transformation specialists, and international medalists.
+          </p>
+          <div class="coaches-stats-strip" data-aos="fade-up" data-aos-delay="100">
+            <div class="coach-stat-item"><i class="fa-solid fa-award"></i> <span>WAKO & Olympic Pathway Accredited</span></div>
+            <div class="coach-stat-item"><i class="fa-solid fa-shield-halved"></i> <span>100% Certified Black Belts & Specialists</span></div>
+            <div class="coach-stat-item"><i class="fa-solid fa-trophy"></i> <span>50+ National & State Medals Produced</span></div>
+          </div>
+        </div>
+
+        <!-- 3D Curved Cylindrical Carousel for Coaches -->
+        <div class="curved-gallery-wrapper coaches-curved-wrapper" data-aos="zoom-in" data-aos-duration="850">
+          <div class="swiper curvedCoachesSwiper">
+            <div class="swiper-wrapper">
+
+              <!-- Coach 1: Rustampreet Singh -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_rustampreet.jpg">
+                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Rustampreet Singh</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Coach 2: Simranjeet Kaur -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_simranjeet.jpg">
+                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Simranjeet Kaur</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Coach 3: Vikramaditya Sharma -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_vikram.jpg">
+                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Vikramaditya Sharma</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Coach 4: Noah Anderson -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_noah.jpg">
+                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Noah Anderson</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Loop Duplicate Set: Rustampreet Singh -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_rustampreet.jpg">
+                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Rustampreet Singh</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Loop Duplicate Set: Simranjeet Kaur -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_simranjeet.jpg">
+                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Simranjeet Kaur</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Loop Duplicate Set: Vikramaditya Sharma -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_vikram.jpg">
+                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Vikramaditya Sharma</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Loop Duplicate Set: Noah Anderson -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_noah.jpg">
+                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img">
+                  <div class="curved-card-overlay coach-card-overlay">
+                    <h4 class="coach-curved-name">Noah Anderson</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Sleek Glass Navigation Arrows -->
+            <button class="gallery-nav-btn gallery-nav-prev" id="coachesPrevBtn" aria-label="Previous coach">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gallery-nav-btn gallery-nav-next" id="coachesNextBtn" aria-label="Next coach">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Pagination Indicator -->
+          <div class="swiper-pagination coaches-curved-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: CHAMPIONSHIP ACHIEVEMENTS WALL (Editorial Magazine Wall Design)
+         =================================================================== -->
+    <section class="achievements-section" id="achievements">
+      <div class="container achieve-container">
+        
+        <!-- 5-Column Editorial Wall Grid (Matching Reference Poster Collage Layout) -->
+        <div class="achieve-wall-grid" data-aos="fade-up" data-aos-duration="900">
+          
+          <!-- COLUMN 1: Large Editorial Title + 2 Posters -->
+          <div class="achieve-col achieve-col-1">
+            <!-- Massive Editorial Title Block (Matching REIMAGINE PODCAST WEBSITE) -->
+            <div class="achieve-title-card">
+              <span class="badge-red"><i class="fa-solid fa-trophy"></i> Hall of Fame</span>
+              <h2 class="achieve-headline">
+                CHAMPION<br>
+                HONOR &<br>
+                <span class="text-red">VICTORIES</span>
+              </h2>
+              <p class="achieve-subtext">
+                Over a decade of national titles, international podiums, and state championship dominance under Coach Rustampreet Singh.
+              </p>
+              <div class="achieve-mini-stats">
+                <div class="mini-stat">
+                  <strong>50+</strong>
+                  <span>State & National Medals</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>100%</strong>
+                  <span>WAKO Olympic Standards</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster 1: Landscape (Matching PAINTING AS THERAPY) -->
+            <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/championship_belt.jpg" alt="State Championship Belt" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">WAKO TITLE</span>
+                <h3 class="poster-title-bold">STATE TITLE BELT</h3>
+                <p class="poster-caption">Rustampreet Singh &bull; Heavyweight Finals</p>
+              </div>
+            </div>
+
+            <!-- Poster 2: Square/Portrait (Matching BASIC PHOTOGRAPHY) -->
+            <div class="achieve-poster poster-square" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/boxing_gloves.jpg" alt="Golden Glove Striking Award" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag tag-accent">NATIONAL ROSTER</span>
+                <h3 class="poster-title-bold title-red">GOLDEN GLOVE</h3>
+                <p class="poster-caption">Best Striker & Technique Honor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 2: 2 Tall Posters -->
+          <div class="achieve-col achieve-col-2">
+            <!-- Poster 3: Tall Portrait (Matching FOOTBALL ATHLETE DAILY ROUTINE) -->
+            <div class="achieve-poster poster-tall poster-athletic" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/hero_ring_spotlight.jpg" alt="Championship Ring Spotlights" class="poster-img">
+              <div class="poster-overlay poster-overlay-center">
+                <span class="poster-tag">OLYMPIC STAGE</span>
+                <h3 class="poster-title-impact">UNDEFEATED<br>IN THE RING</h3>
+                <p class="poster-caption">Senior Division Gold &bull; WAKO India</p>
+              </div>
+            </div>
+
+            <!-- Poster 4: Portrait (Matching MASTERING PUBLIC SPEAKING) -->
+            <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/sparring.jpg" alt="Tatami Speed Sparring Record" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">POINT FIGHTING</span>
+                <h3 class="poster-title-editorial">TATAMI SPEED RECORD</h3>
+                <p class="poster-caption">0.3s Blitz Punch Scoring Milestone</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 3: 3 Interlocking Posters -->
+          <div class="achieve-col achieve-col-3">
+            <!-- Poster 5: Top Portrait with Script (Matching Basic Photography) -->
+            <div class="achieve-poster poster-medium poster-script-wrap" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/rustam_portrait.jpg" alt="Head Coach Rustampreet Singh" class="poster-img">
+              <div class="poster-overlay poster-overlay-top">
+                <span class="poster-script-tag">General Secretary</span>
+                <h3 class="poster-title-script">Leading Chandigarh</h3>
+                <p class="poster-caption">Coach Rustampreet Singh</p>
+              </div>
+            </div>
+
+            <!-- Poster 6: Middle Portrait (Matching BUILDING A BUSINESS) -->
+            <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="350">
+              <img src="assets/dumbbell_athlete.jpg" alt="Elite Strength & Conditioning" class="poster-img">
+              <div class="poster-overlay poster-overlay-center">
+                <span class="poster-tag">ATHLETIC PEAK</span>
+                <h3 class="poster-title-bold title-accent">STRENGTH &amp;<br>ENDURANCE</h3>
+                <p class="poster-caption">Conditioning Benchmark Standard</p>
+              </div>
+            </div>
+
+            <!-- Poster 7: Bottom Tall Portrait (Matching What happens if you do workout 30 days) -->
+            <div class="achieve-poster poster-tall" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/deadlift_banner.jpg" alt="Power Biomechanics" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">BIOMECHANICS</span>
+                <h3 class="poster-title-modern">POWER BEHIND THE PUNCH</h3>
+                <p class="poster-caption">30-Day Fight Camp Protocol</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 4: 3 Posters -->
+          <div class="achieve-col achieve-col-4">
+            <!-- Poster 8: Portrait (Matching Finance is Not Scary) -->
+            <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="450">
+              <img src="assets/arena_crowd.jpg" alt="Championship Stadium Crowd" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">3,000+ FANS</span>
+                <h3 class="poster-title-bold">ARENA PACKED CROWDS</h3>
+                <p class="poster-caption">WAKO Chandigarh Championship Stadium</p>
+              </div>
+            </div>
+
+            <!-- Poster 9: Middle Landscape (Matching THE MAN BEHIND THE KITCHEN) -->
+            <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="500">
+              <img src="assets/ring_action.jpg" alt="Full Contact Title Bout" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag tag-accent">LOW KICK FINALS</span>
+                <h3 class="poster-title-impact title-gold">STATE CHAMPION</h3>
+                <p class="poster-caption">Full Contact Bout &bull; Title Bout Winner</p>
+              </div>
+            </div>
+
+            <!-- Poster 10: Bottom Portrait (Matching BASIC BAKING) -->
+            <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="550">
+              <img src="assets/kids_martial_arts.jpg" alt="Cadet National Podium" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">YOUTH MEDALISTS</span>
+                <h3 class="poster-title-bold">CADET PODIUM</h3>
+                <p class="poster-caption">Building Future National Champions</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 5: 3 Posters + Bottom Tag -->
+          <div class="achieve-col achieve-col-5">
+            <!-- Poster 11: Top Portrait (Matching Daily Life of Barista) -->
+            <div class="achieve-poster poster-tall" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/female_fighter.jpg" alt="Women In Kickboxing Glory" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-script-tag">Women Division</span>
+                <h3 class="poster-title-bold title-red">NATIONAL PODIUM</h3>
+                <p class="poster-caption">Empowerment &amp; Elite Fight Squad</p>
+              </div>
+            </div>
+
+            <!-- Poster 12: Middle Landscape (Matching STARTING TENNIS) -->
+            <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="650">
+              <img src="assets/fighter_punch.jpg" alt="Knockout Finish" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">HOOK FINISH</span>
+                <h3 class="poster-title-impact">KO OF THE YEAR</h3>
+                <p class="poster-caption">North India Championship Trophy</p>
+              </div>
+            </div>
+
+            <!-- Poster 13: Bottom Landscape (Matching WHAT I LOVE ABOUT CYCLING) -->
+            <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="700">
+              <img src="assets/hero_kickbox.jpg" alt="Cardio & Battle Rope Stamina" class="poster-img">
+              <div class="poster-overlay poster-overlay-bottom">
+                <span class="poster-tag">ENDURANCE</span>
+                <h3 class="poster-title-editorial">COMBAT STAMINA</h3>
+                <p class="poster-caption">Championship Conditioning Benchmark</p>
+              </div>
+            </div>
+
+            <!-- Bottom Case Study Tag (Matching A DESIGN CASE STUDY) -->
+            <div class="achieve-footer-cite">
+              <span>WAKO CHANDIGARH &bull; OFFICIAL HALL OF FAME</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 6: "SPECTRUM GALLERY" (3D Curved Cylinder Automatic Carousel)
+         =================================================================== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container gallery-container">
+        <!-- Top Pill Tag & Section Title (Matching Reference Image) -->
+        <div class="gallery-header text-center" data-aos="fade-up">
+          <div class="gallery-category-pill">
+            <i class="fa-solid fa-camera"></i>
+            <span>Inside The Arena</span>
+          </div>
+          <h2 class="section-title">Spectrum <span class="text-red">Gallery</span></h2>
+          <p class="section-subtitle">
+            Experience the championship arena, high-intensity sparring tatami, and official combat moments
+          </p>
+        </div>
+
+        <!-- 3D Curved Cylindrical Carousel -->
+        <div class="curved-gallery-wrapper" data-aos="zoom-in" data-aos-duration="850">
+          <div class="swiper curvedGallerySwiper">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1: Tatami Match Action -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (1).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (1).jpeg" alt="Tatami Championship Bout Officiating" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Tatami Championship</span>
+                    <h4>National Bout Action</h4>
+                    <p>Live Match Striking & Ring Officiating</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Khelo India ASMITA Zonal League -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.17 PM.jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.17 PM.jpeg" alt="Khelo India ASMITA Kickboxing Zonal League Team" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Khelo India League</span>
+                    <h4>ASMITA Zonal Team</h4>
+                    <p>North Zone Championship • Jammu & Kashmir</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Podium Victory Odisha -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (2).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (2).jpeg" alt="National Championship Podium Medal Ceremony" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Podium Glory</span>
+                    <h4>National Medal Ceremony</h4>
+                    <p>WAKO India National Championship • Odisha</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Official Referee Certification -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM.jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM.jpeg" alt="Coach Rustampreet Singh National Referee Certification" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Official Certification</span>
+                    <h4>National Referee Diploma</h4>
+                    <p>Stage Felicitation by WAKO Officials</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Match Decision & Fair Play -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM.jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM.jpeg" alt="Tatami Bout Decision & Winner Declaration" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Match Decision</span>
+                    <h4>Tatami Champion Verdict</h4>
+                    <p>Official WAKO National Bout Adjudication</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 6: 13th National High Performance Camp -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM.jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM.jpeg" alt="13th National Kickboxing High Performance Training Camp" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">High Performance Camp</span>
+                    <h4>13th National Camp</h4>
+                    <p>Elite Training with International Masters</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 7: Senior World Cup Selection -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM (1).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM (1).jpeg" alt="Yadwinder Singh Selected for Senior World Cup Uzbekistan" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">World Cup Bound</span>
+                    <h4>Senior World Cup Selection</h4>
+                    <p>Yadwinder Singh • Uzbekistan Championship</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 8: State Champions Medalists -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (1).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (1).jpeg" alt="State Champions Medalists on Podium" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">State Champions</span>
+                    <h4>National Medal Ceremony</h4>
+                    <p>Gold & Bronze Victory on National Podium</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 9: Team India Kit Felicitation -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (2).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (2).jpeg" alt="WAKO India Open International Cup 2026 Kit Presentation" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">International Cup</span>
+                    <h4>Team India Felicitation</h4>
+                    <p>Official India Kickboxing Kit Presentation</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 10: Ring Stadium Dignitaries -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM (1).jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM (1).jpeg" alt="Coach Rustampreet Singh with International Delegation at Championship Ring" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Championship Arena</span>
+                    <h4>Global Delegation</h4>
+                    <p>Ring-Side with International WAKO Leaders</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+              <!-- Slide 11: International Arena Stage -->
+              <div class="swiper-slide curved-slide">
+                <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM.jpeg">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM.jpeg" alt="WAKO India Championship Arena Spotlight" class="curved-gallery-img">
+                  <div class="curved-card-overlay">
+                    <span class="card-tag">Arena Spotlight</span>
+                    <h4>WAKO Arena Stage</h4>
+                    <p>Championship Atmosphere & High Combat Honor</p>
+                  </div>
+                  <div class="card-expand-btn"><i class="fa-solid fa-expand"></i></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Sleek Glass Navigation Arrows -->
+            <button class="gallery-nav-btn gallery-nav-prev" id="galleryPrevBtn" aria-label="Previous slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="gallery-nav-btn gallery-nav-next" id="galleryNextBtn" aria-label="Next slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Pagination Indicator -->
+          <div class="swiper-pagination gallery-curved-pagination"></div>
+        </div>
+
+        <!-- 3 Feature Highlight Labels directly beneath carousel (Matching Reference Image) -->
+        <div class="gallery-highlights-row" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-highlight-item">
+            <div class="highlight-bullet"></div>
+            <h4 class="highlight-title">National Championships</h4>
+            <p class="highlight-desc">WAKO India tournaments, Khelo India Leagues & World Cup selections</p>
+          </div>
+          <div class="gallery-highlight-item">
+            <div class="highlight-bullet"></div>
+            <h4 class="highlight-title">Certified Officiating</h4>
+            <p class="highlight-desc">National A-grade refereeing & tatami ring mastery by Coach Rustam</p>
+          </div>
+          <div class="gallery-highlight-item">
+            <div class="highlight-bullet"></div>
+            <h4 class="highlight-title">Podium Glory</h4>
+            <p class="highlight-desc">Chandigarh cadets and athletes bringing home national gold & pride</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: CHAMPIONSHIP ROADMAP & BELT ASCENSION PATHWAY
+         =================================================================== -->
+    <section class="pathway-section" id="pathway">
+      <div class="container pathway-container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-graduation-cap"></i> Athlete Ascension</span>
+          <h2 class="section-title">Championship Roadmap & <span class="text-red">Belt Pathway</span></h2>
+          <p class="section-subtitle">
+            From first stance to national podium: A structured, Olympic-standard progression framework under Coach Rustampreet Singh.
+          </p>
+        </div>
+
+        <!-- 5-Stage Ascension Grid / Track -->
+        <div class="pathway-track-wrap" data-aos="fade-up" data-aos-delay="100">
+          <div class="pathway-cards-grid">
+            
+            <!-- Stage 1 -->
+            <div class="pathway-card" data-stage="1">
+              <div class="pathway-card-header">
+                <span class="stage-number">01</span>
+                <span class="belt-badge belt-yellow"><span class="belt-indicator"></span> White to Yellow</span>
+              </div>
+              <h3 class="pathway-title">The Foundation</h3>
+              <p class="pathway-role">Cadets & Beginners</p>
+              <ul class="pathway-syllabus">
+                <li><i class="fa-solid fa-check"></i> Stance, balance & ring footwork</li>
+                <li><i class="fa-solid fa-check"></i> Fundamental Jab, Cross & Guard</li>
+                <li><i class="fa-solid fa-check"></i> Basic front kick & breathing rhythm</li>
+                <li><i class="fa-solid fa-check"></i> Tatami etiquette & safety gear rules</li>
+              </ul>
+              <div class="pathway-meta">
+                <span><i class="fa-regular fa-clock"></i> 40 Hours</span>
+                <span class="meta-tag">Level 1</span>
+              </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="pathway-card" data-stage="2">
+              <div class="pathway-card-header">
+                <span class="stage-number">02</span>
+                <span class="belt-badge belt-green"><span class="belt-indicator"></span> Orange to Green</span>
+              </div>
+              <h3 class="pathway-title">Technical Tatami</h3>
+              <p class="pathway-role">Point Fighting & Speed</p>
+              <ul class="pathway-syllabus">
+                <li><i class="fa-solid fa-check"></i> 0.3s blitz punching & distance control</li>
+                <li><i class="fa-solid fa-check"></i> Lead-leg roundhouse & hook kicks</li>
+                <li><i class="fa-solid fa-check"></i> Defensive parries & rapid counter-strikes</li>
+                <li><i class="fa-solid fa-check"></i> District sparring tournament debut</li>
+              </ul>
+              <div class="pathway-meta">
+                <span><i class="fa-regular fa-clock"></i> 90 Hours</span>
+                <span class="meta-tag">Level 2</span>
+              </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="pathway-card" data-stage="3">
+              <div class="pathway-card-header">
+                <span class="stage-number">03</span>
+                <span class="belt-badge belt-blue"><span class="belt-indicator"></span> Blue to Brown</span>
+              </div>
+              <h3 class="pathway-title">Ring Combat</h3>
+              <p class="pathway-role">Full Contact & K-1 Transition</p>
+              <ul class="pathway-syllabus">
+                <li><i class="fa-solid fa-check"></i> Dutch kickboxing combinations</li>
+                <li><i class="fa-solid fa-check"></i> Low kick checks & heavy shin conditioning</li>
+                <li><i class="fa-solid fa-check"></i> Clinch control & knee strike positioning</li>
+                <li><i class="fa-solid fa-check"></i> Multi-round ring stamina & weight cut</li>
+              </ul>
+              <div class="pathway-meta">
+                <span><i class="fa-regular fa-clock"></i> 180 Hours</span>
+                <span class="meta-tag">Level 3</span>
+              </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="pathway-card featured-pathway" data-stage="4">
+              <div class="pathway-highlight-pill"><i class="fa-solid fa-fire"></i> State Roster</div>
+              <div class="pathway-card-header">
+                <span class="stage-number text-red">04</span>
+                <span class="belt-badge belt-black"><span class="belt-indicator"></span> 1st Dan Black Belt</span>
+              </div>
+              <h3 class="pathway-title">National Contender</h3>
+              <p class="pathway-role">State Team Selection</p>
+              <ul class="pathway-syllabus">
+                <li><i class="fa-solid fa-check"></i> Official WAKO Black Belt Examination</li>
+                <li><i class="fa-solid fa-check"></i> State championship podium qualification</li>
+                <li><i class="fa-solid fa-check"></i> High-intensity tactical fight camps</li>
+                <li><i class="fa-solid fa-check"></i> National games entry & corner strategy</li>
+              </ul>
+              <div class="pathway-meta">
+                <span><i class="fa-regular fa-clock"></i> 300+ Hours</span>
+                <span class="meta-tag tag-accent">Dan Cadre</span>
+              </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="pathway-card" data-stage="5">
+              <div class="pathway-card-header">
+                <span class="stage-number">05</span>
+                <span class="belt-badge belt-gold"><span class="belt-indicator"></span> Master & Mentor</span>
+              </div>
+              <h3 class="pathway-title">Olympic Pathway</h3>
+              <p class="pathway-role">Team India & Master Coach</p>
+              <ul class="pathway-syllabus">
+                <li><i class="fa-solid fa-check"></i> Team India international trials entry</li>
+                <li><i class="fa-solid fa-check"></i> WAKO World Championship qualification</li>
+                <li><i class="fa-solid fa-check"></i> Certified national referee & judge badges</li>
+                <li><i class="fa-solid fa-check"></i> Next-gen cadet coaching accreditation</li>
+              </ul>
+              <div class="pathway-meta">
+                <span><i class="fa-regular fa-clock"></i> Master Rank</span>
+                <span class="meta-tag">Olympic Cadre</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pathway Callout Banner -->
+        <div class="pathway-cta-banner" data-aos="fade-up" data-aos-delay="200">
+          <div class="pathway-cta-content">
+            <div class="pathway-cta-icon">
+              <i class="fa-solid fa-shield-cat"></i>
+            </div>
+            <div>
+              <h4 class="pathway-cta-title">Ready to Begin Your Championship Journey?</h4>
+              <p class="pathway-cta-desc">Every national champion at WAKO Chandigarh started at Stage 01. Book an initial evaluation session with our black belt coaches today.</p>
+            </div>
+          </div>
+          <a href="#registration" class="btn btn-red-pill">
+            <span>Begin Your Evaluation</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: COMBAT STRIKING METRICS & BIOMECHANICS LAB
+         =================================================================== -->
+    <section class="combat-lab-section" id="combat-lab">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-chart-line"></i> Combat Telemetry</span>
+          <h2 class="section-title">Striking Metrics & <span class="text-red">Biomechanics Lab</span></h2>
+          <p class="section-subtitle">
+            Scientific combat engineering: Explore real velocity, kinetic torque, and kinetic chain metrics developed across our fighters.
+          </p>
+        </div>
+
+        <div class="combat-lab-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Left Column: Strike Type Selector -->
+          <div class="strike-selector-col">
+            <h4 class="lab-col-title"><i class="fa-solid fa-crosshairs"></i> Select Strike Technique</h4>
+            
+            <div class="strike-buttons-list" id="strikeButtonsList">
+              <!-- Strike 1 -->
+              <button class="strike-btn active" data-strike="blitz-punch">
+                <div class="strike-btn-left">
+                  <span class="strike-icon"><i class="fa-solid fa-hand-fist"></i></span>
+                  <div>
+                    <strong class="strike-name">Blitz Lead Punch</strong>
+                    <span class="strike-discipline">Point Fighting (Tatami)</span>
+                  </div>
+                </div>
+                <span class="strike-metric-pill">380 PSI</span>
+              </button>
+
+              <!-- Strike 2 -->
+              <button class="strike-btn" data-strike="low-kick">
+                <div class="strike-btn-left">
+                  <span class="strike-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+                  <div>
+                    <strong class="strike-name">Dutch Low Roundhouse</strong>
+                    <span class="strike-discipline">Ring Sport / Low Kick</span>
+                  </div>
+                </div>
+                <span class="strike-metric-pill">850 PSI</span>
+              </button>
+
+              <!-- Strike 3 -->
+              <button class="strike-btn" data-strike="flying-knee">
+                <div class="strike-btn-left">
+                  <span class="strike-icon"><i class="fa-solid fa-shield-virus"></i></span>
+                  <div>
+                    <strong class="strike-name">Flying Jumping Knee</strong>
+                    <span class="strike-discipline">K-1 Style Rules</span>
+                  </div>
+                </div>
+                <span class="strike-metric-pill">920 PSI</span>
+              </button>
+
+              <!-- Strike 4 -->
+              <button class="strike-btn" data-strike="hook-cross">
+                <div class="strike-btn-left">
+                  <span class="strike-icon"><i class="fa-solid fa-fire"></i></span>
+                  <div>
+                    <strong class="strike-name">Heavy Hook-Cross Combo</strong>
+                    <span class="strike-discipline">Full Contact Striking</span>
+                  </div>
+                </div>
+                <span class="strike-metric-pill">1,100 PSI</span>
+              </button>
+            </div>
+
+            <!-- Real-time Test Simulation Trigger -->
+            <button class="lab-simulate-btn" id="simulateStrikeBtn">
+              <i class="fa-solid fa-play"></i>
+              <span>Simulate Kinetic Impact</span>
+            </button>
+          </div>
+
+          <!-- Right Column: Live Telemetry Display & Telemetry Gauges -->
+          <div class="strike-telemetry-col" id="strikeTelemetryDisplay">
+            
+            <!-- Top Telemetry Header -->
+            <div class="telemetry-header">
+              <div>
+                <span class="telemetry-tag" id="telDiscipline">Point Fighting (Tatami)</span>
+                <h3 class="telemetry-strike-name" id="telName">Blitz Lead Punch</h3>
+              </div>
+              <div class="telemetry-live-status">
+                <span class="live-pulse-dot"></span>
+                <span>Telemetry Active</span>
+              </div>
+            </div>
+
+            <!-- Key Numbers Cards Row -->
+            <div class="telemetry-numbers-grid">
+              <div class="telemetry-stat-card">
+                <span class="stat-label">Execution Speed</span>
+                <div class="stat-value" id="telSpeed">0.28 <span class="stat-unit">sec</span></div>
+                <span class="stat-detail">Reaction-to-Target</span>
+              </div>
+              <div class="telemetry-stat-card">
+                <span class="stat-label">Impact Force</span>
+                <div class="stat-value text-red" id="telForce">380 <span class="stat-unit">PSI</span></div>
+                <span class="stat-detail">Calibrated Sensor</span>
+              </div>
+              <div class="telemetry-stat-card">
+                <span class="stat-label">Kinetic Torque</span>
+                <div class="stat-value" id="telTorque">265 <span class="stat-unit">Nm</span></div>
+                <span class="stat-detail">Core Rotational Drive</span>
+              </div>
+              <div class="telemetry-stat-card">
+                <span class="stat-label">Caloric Burn Rate</span>
+                <div class="stat-value" id="telBurn">820 <span class="stat-unit">kcal/hr</span></div>
+                <span class="stat-detail">Championship Intensity</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Animated Metric Bars -->
+            <div class="telemetry-bars-group">
+              <div class="metric-bar-item">
+                <div class="metric-bar-labels">
+                  <span>Impact Velocity</span>
+                  <span id="labelVelocity">95% (Elite Speed)</span>
+                </div>
+                <div class="metric-bar-track">
+                  <div class="metric-bar-fill fill-velocity" id="barVelocity" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="metric-bar-item">
+                <div class="metric-bar-labels">
+                  <span>Rotational Torque</span>
+                  <span id="labelTorque">68% (Linear Focus)</span>
+                </div>
+                <div class="metric-bar-track">
+                  <div class="metric-bar-fill fill-torque" id="barTorque" style="width: 68%;"></div>
+                </div>
+              </div>
+
+              <div class="metric-bar-item">
+                <div class="metric-bar-labels">
+                  <span>Scoring Accuracy Zone</span>
+                  <span id="labelAccuracy">92% Scoring Zone</span>
+                </div>
+                <div class="metric-bar-track">
+                  <div class="metric-bar-fill fill-accuracy" id="barAccuracy" style="width: 92%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kinetic Chain Anatomy Breakdown -->
+            <div class="kinetic-chain-box">
+              <div class="kinetic-chain-header">
+                <i class="fa-solid fa-person-running"></i>
+                <strong>Kinetic Chain Breakdown:</strong>
+              </div>
+              <p class="kinetic-chain-desc" id="telChain">
+                Push off rear ball-of-foot &rarr; pelvic acceleration &rarr; scapular extension &rarr; instantaneous glove deceleration at impact.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: VOICES OF THE MAT & PODIUM PROOF
+         =================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-star"></i> Real Champion Stories</span>
+          <h2 class="section-title">Voices of the Mat & <span class="text-red">Podium Proof</span></h2>
+          <p class="section-subtitle">
+            Hear directly from state champions, cadet medalists, and athletic achievers transformed under our official WAKO faculty.
+          </p>
+        </div>
+
+        <!-- Reviews Swiper Carousel (Simplified UI: Letter Avatar, Name, Stars, Hinglish/English Reviews) -->
+        <div class="reviews-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper reviewsSwiper">
+            <div class="swiper-wrapper">
+
+              <!-- Review 1 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">A</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Amanjot Dhillon</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "Rustam Sir ki coaching next level hai! Pehle lagta tha kickboxing bas aggressive fighting hai, but sir ne proper biomechanics aur ring footwork sikhaya. State championship me gold medal jeeta thanks to his training camps. Best combat academy in Chandigarh!"
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">P</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Preeti Rathi</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "Joined for self-defense and weight loss, but the transformation has been unbelievable. Environment female athletes ke liye super safe aur supportive hai. Simranjeet ma'am aur Rustam Sir personal attention dete hain har technique pe."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">K</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Kavish Verma</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "My 11-year-old son was very introverted. Within 8 months of joining the cadet kickboxing batch, his fitness and confidence have skyrocketed. Coach Rustam teaches discipline and respect first. Proud to see him win his first tournament medal!"
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 4 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">R</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Rohit Sharma</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "Bhai yahan ka Dutch combination training aur pad work session bilkul authentic hai. Conditioning drills itni solid hoti hain ki stamina 2x ho gaya. If you genuinely want to learn real kickboxing and not just fancy gym boxing, join this club."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 5 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">H</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Harpreet Singh</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "10/10 recommendation! Chandigarh me aisi professional kickboxing facility aur kahi nahi milegi. Tatami points fighting ho ya ring contact, Rustam Sir har student ke strengths pe kaam karte hain. Real certified black belt coaching."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 6 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">N</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Neha Kapoor</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "6 months me 9 kgs fat loss kiya and learned solid kickboxing defense! Sir's motivation keeps you pushing your limits. Music, energy, and sparring sessions sab top quality hai. Totally worth every single minute."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 7 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">G</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Gurinder Sandhu</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "Coach Rustampreet Sir is an army veteran trainer and his experience clearly shows in the drills. Fight IQ, timing, aur defense counter techniques par focus bohot strong hai. Hardcore fitness plus real martial arts!"
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 8 -->
+              <div class="swiper-slide">
+                <div class="simple-review-card">
+                  <div class="simple-review-header">
+                    <div class="simple-avatar-letter">A</div>
+                    <div class="simple-user-details">
+                      <h4 class="simple-user-name">Ananya Gupta</h4>
+                      <div class="simple-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="simple-review-text">
+                    "The best decision was joining the evening fitness and kickboxing batch. Coaches are extremely patient with beginners. Body posture, core strength, aur mental stamina sab improve ho gaya. Outstanding vibe and discipline!"
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Sleek Glass Navigation Arrows -->
+            <button class="reviews-nav-btn reviews-nav-prev" id="reviewsPrevBtn" aria-label="Previous review">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="reviews-nav-btn reviews-nav-next" id="reviewsNextBtn" aria-label="Next review">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination reviews-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Academy Trust & Assurance Strip -->
+        <div class="academy-trust-strip" data-aos="fade-up" data-aos-delay="200">
+          <div class="trust-strip-item">
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+              <strong>14+ Consecutive Years</strong>
+              <span>Chandigarh State Title Dominance</span>
+            </div>
+          </div>
+          <div class="trust-strip-item">
+            <i class="fa-solid fa-users"></i>
+            <div>
+              <strong>1,200+ Athletes</strong>
+              <span>Trained Across All Combat Cadres</span>
+            </div>
+          </div>
+          <div class="trust-strip-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>100% WAKO Certified</strong>
+              <span>Affiliated With WAKO India & WAKO World</span>
+            </div>
+          </div>
+          <div class="trust-strip-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <div>
+              <strong>Olympic Safety Standard</strong>
+              <span>Official Headgear & Impact Protection</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         YOUTUBE PODCASTS SECTION
+         =================================================================== -->
+    <section class="podcast-section" id="podcasts">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-brands fa-youtube"></i> Video & Audio Podcasts</span>
+          <h2 class="section-title">The Champion's Mindset &mdash; <span class="text-red">R Martial Arts Podcast</span></h2>
+          <p class="section-subtitle">
+            Watch official episodes hosted by Coach Rustampreet Singh. In-depth talks on striking biomechanics, weight-cut strategies, and interviews with state champions.
+          </p>
+        </div>
+
+        <!-- Main Featured Podcast Player Card -->
+        <div class="podcast-featured-card" id="podcastPlayerSection" data-aos="fade-up" data-aos-delay="100">
+          <div class="podcast-video-frame-wrap">
+            <iframe 
+              id="podcastMainPlayer" 
+              src="https://www.youtube.com/embed/Cl8n0r7r9uo?rel=0" 
+              title="The Real Side of Sports Ft. Manjot Longia" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="podcast-featured-info">
+            <div>
+              <div class="podcast-tag-channel">
+                <i class="fa-brands fa-youtube"></i> Official Video Episode &bull; R Martial Arts Podcast
+              </div>
+              <h3 class="podcast-featured-title" id="currentPodcastTitle">
+                The Real Side of Sports Ft. Manjot Longia | Episode 02
+              </h3>
+              <p class="podcast-featured-desc" id="currentPodcastDesc">
+                Head Coach Rustampreet Singh hosts athlete Manjot Longia to discuss grassroots sports development, national championship preparation, and the dedication required behind competitive athletics.
+              </p>
+            </div>
+
+            <div>
+              <div class="podcast-hosts">
+                <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh" class="podcast-host-img">
+                <div class="podcast-host-meta">
+                  <h5 style="color:#fff; font-size:1.05rem;">Rustampreet Singh</h5>
+                  <p style="color:var(--text-muted); font-size:0.85rem;">Host & WAKO Chandigarh Head Coach</p>
+                </div>
+              </div>
+
+              <div class="hero-buttons" style="margin-bottom:0; gap:0.75rem; flex-wrap:wrap;">
+                <a href="https://youtu.be/Cl8n0r7r9uo?si=yqS7YUb6Ydg70jDC" target="_blank" rel="noopener" class="btn btn-youtube btn-sm" id="currentPodcastWatchBtn">
+                  <i class="fa-brands fa-youtube"></i> Watch on YouTube
+                </a>
+                <span class="badge-urgent" id="currentPodcastEp" style="font-size:0.75rem; padding:0.4rem 0.8rem;">Episode 01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Container for Podcasts -->
+        <div class="carousel-nav-header" data-aos="fade-up">
+          <div>
+            <h3 style="font-size: 1.5rem; color:#fff;">Explore All Podcast & Reel Episodes</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Swipe or click below to play in featured monitor</p>
+          </div>
+          <div class="carousel-custom-controls">
+            <button class="carousel-btn pod-prev" aria-label="Previous Episode"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="carousel-btn pod-next" aria-label="Next Episode"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="swiper podcastsSwiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <!-- Episode 1: YouTube - Manjot Longia -->
+            <div class="swiper-slide">
+              <div class="podcast-card" 
+                   data-platform="youtube"
+                   data-video-id="Cl8n0r7r9uo" 
+                   data-url="https://youtu.be/Cl8n0r7r9uo?si=yqS7YUb6Ydg70jDC"
+                   data-title="The Real Side of Sports Ft. Manjot Longia | Episode 02" 
+                   data-desc="Head Coach Rustampreet Singh hosts Manjot Longia to discuss grassroots sports development, championship preparation, and martial arts reality."
+                   data-ep="01">
+                <img src="assets/podcast_yt_Cl8n0r7r9uo.jpg" alt="The Real Side of Sports Ft. Manjot Longia" class="podcast-card-bg-img">
+                <div class="podcast-card-top-pill">
+                  <span class="podcast-ep-badge"><i class="fa-brands fa-youtube"></i> YouTube Episode</span>
+                  <span class="podcast-duration-badge"><i class="fa-solid fa-play"></i> Full Video</span>
+                </div>
+                <div class="podcast-card-gradient">
+                  <div class="podcast-card-text">
+                    <h4 class="podcast-card-title">The Real Side of Sports</h4>
+                    <p class="podcast-card-desc">Ft. Manjot Longia: Grassroots sports, tournament mindset & state championship prep.</p>
+                  </div>
+                  <button class="podcast-btn-learn-more" aria-label="Play Episode 01">
+                    <span>Play Episode</span>
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Episode 2: YouTube - Football Coach -->
+            <div class="swiper-slide">
+              <div class="podcast-card" 
+                   data-platform="youtube"
+                   data-video-id="NC02y0yh40s" 
+                   data-url="https://youtu.be/NC02y0yh40s?si=Lu5qX1e-dDMSiON4"
+                   data-title="Elite Mindset: Inside the World of Football & Athletic Coaching" 
+                   data-desc="Special podcast exploring athletic conditioning crossover between football and combat sports, tactical discipline, and building a winning mindset."
+                   data-ep="02">
+                <img src="assets/podcast_yt_NC02y0yh40s.jpg" alt="Elite Mindset: Inside the World of Football" class="podcast-card-bg-img">
+                <div class="podcast-card-top-pill">
+                  <span class="podcast-ep-badge"><i class="fa-brands fa-youtube"></i> YouTube Episode</span>
+                  <span class="podcast-duration-badge"><i class="fa-solid fa-play"></i> Full Video</span>
+                </div>
+                <div class="podcast-card-gradient">
+                  <div class="podcast-card-text">
+                    <h4 class="podcast-card-title">Elite Mindset & Coaching</h4>
+                    <p class="podcast-card-desc">Special Podcast: Tactical discipline, conditioning crossover & athletic excellence.</p>
+                  </div>
+                  <button class="podcast-btn-learn-more" aria-label="Play Episode 02">
+                    <span>Play Episode</span>
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Episode 3: Instagram Reel - Sports Games & Leadership -->
+            <div class="swiper-slide">
+              <div class="podcast-card" 
+                   data-platform="instagram"
+                   data-video-id="DVnBqw1Sd9a" 
+                   data-url="https://www.instagram.com/reel/DVnBqw1Sd9a/?xtok=ZmlscWx2M2hvZmUy"
+                   data-title="National Sports Games & Technical Leadership Talks" 
+                   data-desc="Coach Rustampreet Singh conducts on-ground interviews with national sports officials on infrastructure and competitive standards."
+                   data-ep="03">
+                <img src="assets/podcast_reel_DVnBqw1Sd9a.jpg" alt="National Sports Games & Leadership Talks" class="podcast-card-bg-img">
+                <div class="podcast-card-top-pill">
+                  <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
+                  <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
+                </div>
+                <div class="podcast-card-gradient">
+                  <div class="podcast-card-text">
+                    <h4 class="podcast-card-title">National Games Leadership</h4>
+                    <p class="podcast-card-desc">Coach Rustam on-ground interview: Sports federation standards & athlete pathways.</p>
+                  </div>
+                  <button class="podcast-btn-learn-more" aria-label="Play Reel 03">
+                    <span>Watch Reel</span>
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Episode 4: Instagram Reel - WAKO National Championship -->
+            <div class="swiper-slide">
+              <div class="podcast-card" 
+                   data-platform="instagram"
+                   data-video-id="DdszbnICD7c" 
+                   data-url="https://www.instagram.com/reel/DdszbnICD7c/?rpxt=MjBrb2lmdnl5YnQ2"
+                   data-title="WAKO National Kickboxing Championship Referee Insights" 
+                   data-desc="Behind the scenes at the National Kickboxing Championship with official WAKO refereeing protocols and competition insights."
+                   data-ep="04">
+                <img src="assets/podcast_reel_DdszbnICD7c.jpg" alt="WAKO National Kickboxing Championship Insights" class="podcast-card-bg-img">
+                <div class="podcast-card-top-pill">
+                  <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
+                  <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
+                </div>
+                <div class="podcast-card-gradient">
+                  <div class="podcast-card-text">
+                    <h4 class="podcast-card-title">National Championship Insights</h4>
+                    <p class="podcast-card-desc">WAKO National Kickboxing Championship: Refereeing standards & tournament ring composure.</p>
+                  </div>
+                  <button class="podcast-btn-learn-more" aria-label="Play Reel 04">
+                    <span>Watch Reel</span>
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Episode 5: Instagram Reel - SAI Athlete Mentorship -->
+            <div class="swiper-slide">
+              <div class="podcast-card" 
+                   data-platform="instagram"
+                   data-video-id="DWp3fePkp7i" 
+                   data-url="https://www.instagram.com/reel/DWp3fePkp7i/?mdxt=Z2wxZmF6cTUwYTBv"
+                   data-title="SAI Athlete Mentorship & Sports Excellence Byte" 
+                   data-desc="Live conversation highlighting athlete mentorship, rigorous daily training habits, and youth dedication at top sports academies."
+                   data-ep="05">
+                <img src="assets/podcast_reel_DWp3fePkp7i.jpg" alt="SAI Athlete Mentorship & Sports Excellence Byte" class="podcast-card-bg-img">
+                <div class="podcast-card-top-pill">
+                  <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
+                  <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
+                </div>
+                <div class="podcast-card-gradient">
+                  <div class="podcast-card-text">
+                    <h4 class="podcast-card-title">SAI Athlete Mentorship</h4>
+                    <p class="podcast-card-desc">Live athlete conversation: Training habits, mindset & national sports excellence.</p>
+                  </div>
+                  <button class="podcast-btn-learn-more" aria-label="Play Reel 05">
+                    <span>Watch Reel</span>
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination pod-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CHAMPIONSHIP REGISTRATION & ATHLETE PASS GENERATOR
+         =================================================================== -->
+    <section class="register-section" id="registration">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-trophy"></i> State Championship Entry</span>
+          <h2 class="section-title">Official Athlete <span class="text-red">Registration Portal</span></h2>
+          <p class="section-subtitle">
+            Submit your fighter entry for the upcoming WAKO Chandigarh Kickboxing Championship. An instant digital provisional athlete pass will be generated.
+          </p>
+        </div>
+
+        <div class="register-card-container" data-aos="fade-up" data-aos-delay="100">
+          <form id="championshipRegForm">
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label class="form-label" for="regFullName">Athlete Full Name *</label>
+                <input type="text" id="regFullName" class="form-control" placeholder="e.g. Manpreet Singh" required>
+              </div>
+
+              <!-- Age Category -->
+              <div class="form-group">
+                <label class="form-label" for="regCategory">Age Category *</label>
+                <select id="regCategory" class="form-control" required>
+                  <option value="">Select Age Group</option>
+                  <option value="Cadet (10-12 yrs)">Cadet (10 - 12 Years)</option>
+                  <option value="Sub-Junior (13-15 yrs)">Sub-Junior (13 - 15 Years)</option>
+                  <option value="Junior (16-18 yrs)">Junior (16 - 18 Years)</option>
+                  <option value="Senior (19-40 yrs)">Senior (19 - 40 Years)</option>
+                  <option value="Veterans (41+ yrs)">Veterans (41+ Years)</option>
+                </select>
+              </div>
+
+              <!-- Discipline -->
+              <div class="form-group">
+                <label class="form-label" for="regDiscipline">Championship Discipline *</label>
+                <select id="regDiscipline" class="form-control" required>
+                  <option value="">Select Combat Discipline</option>
+                  <option value="Point Fighting">Point Fighting (Tatami)</option>
+                  <option value="Light Contact">Light Contact (Tatami)</option>
+                  <option value="Kick Light">Kick Light (Tatami)</option>
+                  <option value="Full Contact">Full Contact (Ring)</option>
+                  <option value="Low Kick">Low Kick (Ring)</option>
+                  <option value="K-1 Style Rules">K-1 Style Rules (Ring)</option>
+                </select>
+              </div>
+
+              <!-- Weight Division -->
+              <div class="form-group">
+                <label class="form-label" for="regWeight">Weight Category (in kg) *</label>
+                <input type="number" id="regWeight" class="form-control" placeholder="e.g. 63.5" min="25" max="130" step="0.5" required>
+              </div>
+
+              <!-- Club / Academy -->
+              <div class="form-group">
+                <label class="form-label" for="regClub">Affiliated Club / School / District</label>
+                <input type="text" id="regClub" class="form-control" placeholder="e.g. Chandigarh Combat Club">
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="form-group">
+                <label class="form-label" for="regPhone">Contact Phone / WhatsApp *</label>
+                <input type="tel" id="regPhone" class="form-control" placeholder="e.g. +91 98765 00000" required>
+              </div>
+
+              <!-- Medical Consent -->
+              <div class="form-group full-width">
+                <label style="display:flex; align-items:center; gap:0.6rem; font-size:0.88rem; color:var(--text-secondary); cursor:pointer;">
+                  <input type="checkbox" required style="width:18px; height:18px; accent-color: var(--primary-red);">
+                  I hereby confirm that I am medically fit to participate in combat sports according to official WAKO India regulations.
+                </label>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-red-pill btn-lg" style="min-width: 280px;">
+                <i class="fa-solid fa-file-signature"></i> Generate Athlete Pass
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: WHATSAPP CONNECT & INSTANT ATHLETE DESK
+         =================================================================== -->
+    <section class="whatsapp-section" id="whatsapp">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-whatsapp"><i class="fa-brands fa-whatsapp"></i> Instant Coach Desk</span>
+          <h2 class="section-title">Direct WhatsApp <span class="text-whatsapp">Athlete Support</span></h2>
+          <p class="section-subtitle">
+            Skip delays and email wait times. Chat 1-on-1 with Coach Rustampreet Singh directly on WhatsApp for real-time answers on tournament registration, free trial workouts, belt exams, and fight training.
+          </p>
+        </div>
+
+        <div class="whatsapp-layout" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Left: 4 Preset Quick-Inquiry Cards -->
+          <div class="whatsapp-queries-col">
+            <h3 class="whatsapp-col-title"><i class="fa-solid fa-bolt-lightning"></i> Select a Quick Topic</h3>
+            <p class="whatsapp-col-desc">Click any category below to immediately start a pre-filled WhatsApp conversation:</p>
+
+            <div class="whatsapp-cards-grid">
+              <!-- Query Card 1 -->
+              <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20would%20like%20to%20book%20a%20Free%20Trial%20Session%20at%20WAKO%20Chandigarh." target="_blank" rel="noopener" class="whatsapp-query-card">
+                <div class="whatsapp-card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="whatsapp-card-body">
+                  <h4>Free Trial Session</h4>
+                  <p>Book your 60-min introductory tatami conditioning & stance workout.</p>
+                  <span class="whatsapp-card-cta">Start Chat <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </a>
+
+              <!-- Query Card 2 -->
+              <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20have%20questions%20regarding%20the%20upcoming%20State%20Championship%20Registration%20and%20weight%20brackets." target="_blank" rel="noopener" class="whatsapp-query-card">
+                <div class="whatsapp-card-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="whatsapp-card-body">
+                  <h4>Championship Entry</h4>
+                  <p>Eligibility, medical guidelines, age brackets & weigh-in criteria.</p>
+                  <span class="whatsapp-card-cta">Start Chat <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </a>
+
+              <!-- Query Card 3 -->
+              <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20please%20share%20the%20WAKO%20Belt%20Grading%20roadmap%20and%20upcoming%20exam%20schedule." target="_blank" rel="noopener" class="whatsapp-query-card">
+                <div class="whatsapp-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="whatsapp-card-body">
+                  <h4>Belt Grading Syllabus</h4>
+                  <p>Inquire about White to Black Belt national syllabus and test dates.</p>
+                  <span class="whatsapp-card-cta">Start Chat <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </a>
+
+              <!-- Query Card 4 -->
+              <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20am%20interested%20in%20Elite%201-on-1%20Kickboxing%20Training%20under%20your%20mentorship." target="_blank" rel="noopener" class="whatsapp-query-card">
+                <div class="whatsapp-card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                <div class="whatsapp-card-body">
+                  <h4>1-on-1 Fight Mentorship</h4>
+                  <p>Competitive ring sports prep, low kick conditioning & private coaching.</p>
+                  <span class="whatsapp-card-cta">Start Chat <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Coach WhatsApp Card with Live Status & Socials -->
+          <div class="whatsapp-hub-card">
+            <div class="whatsapp-hub-header">
+              <div class="whatsapp-avatar-wrap">
+                <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="whatsapp-avatar-img">
+                <span class="whatsapp-status-indicator" title="Online on WhatsApp"></span>
+              </div>
+              <div class="whatsapp-hub-info">
+                <div class="whatsapp-online-pill">
+                  <span class="radar-dot"></span> Online &bull; Replies &lt; 15 mins
+                </div>
+                <h3 class="whatsapp-hub-name">Coach Rustampreet Singh</h3>
+                <p class="whatsapp-hub-role">Head Coach &amp; General Secretary &bull; WAKO Chandigarh</p>
+                <div class="whatsapp-verified-badge">
+                  <i class="fa-solid fa-circle-check"></i> Official Association Line
+                </div>
+              </div>
+            </div>
+
+            <div class="whatsapp-hub-middle">
+              <div class="whatsapp-metric-box">
+                <span class="metric-num"><i class="fa-solid fa-headset text-whatsapp"></i> Direct Access</span>
+                <span class="metric-lbl">+91 62396 62890</span>
+              </div>
+              <div class="whatsapp-metric-box">
+                <span class="metric-num"><i class="fa-regular fa-clock text-whatsapp"></i> Mon &ndash; Sat</span>
+                <span class="metric-lbl">6:00 AM &ndash; 8:30 PM IST</span>
+              </div>
+            </div>
+
+            <!-- Primary Big WhatsApp CTA -->
+            <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20want%20to%20connect%20with%20you%20regarding%20WAKO%20Chandigarh%20Kickboxing." target="_blank" rel="noopener" class="btn btn-whatsapp-direct">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Open WhatsApp Chat Now</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <!-- Social Media Channels Strip with Brand Hover Colors -->
+            <div class="whatsapp-social-strip">
+              <span class="social-strip-label">Official Social Channels:</span>
+              <div class="social-brand-pills">
+                <a href="https://www.instagram.com/kickboxing_chandigarh?xtok=YzExMDhjYWxsczRl&utm_source=qr" target="_blank" rel="noopener" class="social-brand-btn brand-instagram" title="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@r_martial_arts01?si=9VMr6kO6qmtXfT2c" target="_blank" rel="noopener" class="social-brand-btn brand-youtube" title="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-brand-btn brand-facebook" title="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20am%20chatting%20from%20WAKO%20Chandigarh%20website" target="_blank" rel="noopener" class="social-brand-btn brand-whatsapp" title="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT & INQUIRY SECTION
+         =================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge-red"><i class="fa-solid fa-envelope"></i> Get in Touch</span>
+          <h2 class="section-title">Association Headquarters & <span class="text-red">Training Center</span></h2>
+          <p class="section-subtitle">
+            Have questions regarding championship affiliation, trial classes, or club memberships? Speak directly with our team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards" data-aos="fade-right">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-content">
+                <h4>Training Arena & Office</h4>
+                <p>Amateur Kickboxing Association Chandigarh, Sports Complex Sector 42, Chandigarh, UT 160036</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-card-content">
+                <h4>Phone & WhatsApp</h4>
+                <p><a href="tel:+916239662890" style="color:#ffffff;">+91 62396 62890</a></p>
+                <p style="font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-tech); margin-top: 0.3rem;">Mon &ndash; Sat: 6:00 AM &ndash; 8:30 PM</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-content">
+                <h4>Official Correspondence</h4>
+                <p>wakochandigarh@gmail.com / info@kickboxingchandigarh.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-card-content">
+                <h4>Instant WhatsApp Assistance</h4>
+                <p>Message Coach Rustampreet Singh directly for immediate inquiries regarding event registration and coaching.</p>
+                <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20want%20to%20inquire%20about%20WAKO%20Chandigarh%20Kickboxing%20training" target="_blank" rel="noopener" class="btn btn-sm btn-red-pill" style="margin-top:0.6rem;">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Box -->
+          <div class="contact-form-box" data-aos="fade-left">
+            <h3 style="font-size:1.45rem; margin-bottom:1.3rem; color:#fff;">Send Us an Official Message</h3>
+            <form id="contactForm">
+              <div class="form-group" style="margin-bottom:1.2rem;">
+                <label class="form-label" for="contactName">Your Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom:1.2rem;">
+                <label class="form-label" for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom:1.2rem;">
+                <label class="form-label" for="contactSubject">Inquiry Subject</label>
+                <select id="contactSubject" class="form-control">
+                  <option>State Championship Registration</option>
+                  <option>Daily Training Batches</option>
+                  <option>Referee & Judge Certification</option>
+                  <option>Sponsorship & Collaboration</option>
+                  <option>Other Query</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:1.5rem;">
+                <label class="form-label" for="contactMessage">Message *</label>
+                <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can we assist your martial arts journey?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-red-pill" style="width:100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Official Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div style="display:flex; align-items:center; gap:0.9rem; margin-bottom:1.2rem;">
+            <img src="assets/logo.png" alt="WAKO Logo" style="width:48px; height:48px;">
+            <h3 class="footer-brand-title" style="margin:0;">WAKO <span class="text-red">CHANDIGARH</span></h3>
+          </div>
+          <p class="footer-brand-desc">
+            Amateur Kickboxing Association Chandigarh. Promoting sportsmanship, discipline, Olympic ideals, and world-class combat fitness across the city.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/kickboxing_chandigarh?xtok=YzExMDhjYWxsczRl&utm_source=qr" target="_blank" rel="noopener" class="footer-social-btn footer-social-instagram" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/@r_martial_arts01?si=9VMr6kO6qmtXfT2c" target="_blank" rel="noopener" class="footer-social-btn footer-social-youtube" title="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-btn footer-social-facebook" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/916239662890?text=Hello%20Coach%20Rustampreet,%20I%20want%20to%20inquire%20about%20WAKO%20Chandigarh%20Kickboxing%20training" target="_blank" rel="noopener" class="footer-social-btn footer-social-whatsapp" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#training">Training Choices</a></li>
+            <li><a href="#coaches">Certified Coaches</a></li>
+            <li><a href="#pathway">Belt Roadmap</a></li>
+            <li><a href="#combat-lab">Biomechanics Lab</a></li>
+            <li><a href="#testimonials">Voices of the Mat</a></li>
+            <li><a href="#podcasts">YouTube Podcasts</a></li>
+            <li><a href="#registration">Championship Entry</a></li>
+            <li><a href="#whatsapp">WhatsApp Desk</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Disciplines -->
+        <div class="footer-col">
+          <h4>Combat Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="#training">Point Fighting</a></li>
+            <li><a href="#training">Light Contact</a></li>
+            <li><a href="#training">Kick Light</a></li>
+            <li><a href="#training">Full Contact</a></li>
+            <li><a href="#training">Low Kick</a></li>
+            <li><a href="#training">K-1 Style Rules</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Coach's Motto -->
+        <div class="footer-col">
+          <h4>Coach's Motto</h4>
+          <p style="font-style:italic; color:#e2e8f0; font-size:0.95rem; margin-bottom:1.1rem; line-height:1.5;">
+            "Never believe in regrets, I do, I believe."
+          </p>
+          <p style="font-size:0.82rem; color:#9ca3af; font-family:var(--font-tech);">
+            &mdash; Rustampreet Singh, Head Coach & General Secretary, Amateur Kickboxing Association Chandigarh.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-main-row">
+          <div>
+            &copy; 2026 Amateur Kickboxing Association Chandigarh (WAKO Chandigarh). All rights reserved.
+          </div>
+          <div>
+            Affiliated with WAKO India Kickboxing Federation &bull; Non-Profit Sports Organization
+          </div>
+        </div>
+        <div class="footer-signature-row">
+          <div class="footer-credit">
+            Made by Heart <i class="fa-solid fa-heart credit-heart"></i> by <a href="https://www.linkedin.com/in/aryan-nair-73b97624b/" target="_blank" rel="noopener noreferrer" class="credit-link">Aryan Nair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       ATHLETE PROVISIONAL PASS MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="passModal">
+    <div class="athlete-pass-card">
+      <div class="pass-header">
+        <div class="pass-header-info">
+          <img src="assets/logo.png" alt="WAKO Badge" class="pass-logo">
+          <div>
+            <h4 style="color:#fff;">WAKO CHANDIGARH</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Official Athlete Championship Pass</p>
+          </div>
+        </div>
+        <button class="pass-close-btn" id="closePassBtn" title="Close Pass">&times;</button>
+      </div>
+
+      <div class="pass-body">
+        <div class="pass-details-grid">
+          <div>
+            <div class="pass-field-label">Registration ID</div>
+            <div class="pass-field-val" id="passIdVal" style="color:var(--primary-red);">CHD-WAKO-26-8941</div>
+          </div>
+          <div>
+            <div class="pass-field-label">Athlete Name</div>
+            <div class="pass-field-val" id="passNameVal">Fighter Name</div>
+          </div>
+          <div>
+            <div class="pass-field-label">Combat Division</div>
+            <div class="pass-field-val" id="passDiscVal">Point Fighting</div>
+          </div>
+          <div>
+            <div class="pass-field-label">Age Category</div>
+            <div class="pass-field-val" id="passCatVal">Senior (19-40)</div>
+          </div>
+          <div>
+            <div class="pass-field-label">Weight Category</div>
+            <div class="pass-field-val" id="passWeightVal">63.5 kg</div>
+          </div>
+          <div>
+            <div class="pass-field-label">Affiliated Club</div>
+            <div class="pass-field-val" id="passClubVal">Chandigarh Academy</div>
+          </div>
+        </div>
+
+        <div class="pass-barcode-box">
+          <div class="pass-qr-sim" id="passBarcodeVal">||| | ||||| || |||| |||</div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.4rem; font-family:var(--font-tech);">
+            Official Verification Barcode &bull; Present at Mandatory Weigh-In
+          </div>
+        </div>
+
+        <div class="pass-actions">
+          <button class="btn btn-red-pill" id="printPassBtn" style="width:100%;">
+            <i class="fa-solid fa-print"></i> Print / Download Pass
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       GALLERY LIGHTBOX MODAL
+       =================================================================== -->
+  <div id="lightboxModal">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <img id="lightboxImg" src="" alt="Championship Photo Zoom">
+  </div>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Floating Contact Buttons (Desktop: WhatsApp | Mobile: Direct Call) -->
+  <div class="floating-contact-wrap" id="floatingContactWrap">
+    <!-- Desktop: WhatsApp Floating Button -->
+    <a 
+      href="https://wa.me/916239662890?text=Hi%20Coach%20Rustam!%20I%20would%20like%20to%20know%20more%20about%20WAKO%20Chandigarh%20Kickboxing%20%26%20Fitness%20Club." 
+      class="floating-action-btn floating-whatsapp-btn" 
+      id="floatingWhatsappBtn" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      aria-label="Chat with Coach Rustam on WhatsApp"
+      title="Chat on WhatsApp (62396 62890)"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="floating-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Mobile: Call Floating Button -->
+    <a 
+      href="tel:+916239662890" 
+      class="floating-action-btn floating-call-btn" 
+      id="floatingCallBtn" 
+      aria-label="Call Coach Rustam (62396 62890)"
+      title="Call Us (62396 62890)"
+    >
+      <i class="fa-solid fa-phone"></i>
+      <span class="floating-pulse-ring"></span>
+    </a>
+  </div>
+
+  <!-- Custom Floating Podcast Cursor Pill (Shown on Podcast Hover) -->
+  <div class="podcast-custom-cursor" id="podcastCursor" aria-hidden="true">
+    <i class="fa-solid fa-play"></i>
+    <span>Watch Podcast</span>
+  </div>
+
+  <!-- Video Showcase Lightbox Modal -->
+  <div class="video-modal-overlay" id="videoModal">
+    <div class="video-modal-container">
+      <button class="video-modal-close" id="closeVideoModal" aria-label="Close Video">&times;</button>
+      <div class="video-modal-frame">
+        <iframe 
+          id="modalShowcaseIframe" 
+          src="" 
+          data-src="https://www.youtube.com/embed/bUmwymLfgb4?autoplay=1&rel=0&enablejsapi=1" 
+          title="WAKO Kickboxing Musical Forms Showcase Reel" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       SCRIPTS (Swiper 11, AOS & Main JS)
+       =================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js?v=20"></script>
+</body>
+</html>

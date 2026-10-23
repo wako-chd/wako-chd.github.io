@@ -1,0 +1,13 @@
+# Sensitive backend & internal setup documentation
+GOOGLE_SHEET_SETUP.md
+google-apps-script.js
+server.js
+leads.db
+
+# Dependencies, logs & system caches
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
