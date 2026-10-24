@@ -9,9 +9,21 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Google Fonts: Bebas Neue + Inter -->
+  <!-- DNS Prefetch & Preconnect for Fast Asset Delivery -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//unpkg.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+  <!-- Preload Critical Above-The-Fold Hero Assets -->
+  <link rel="preload" as="image" href="assets/hero_ring_spotlight.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero_athlete_rope.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6 Icons -->
@@ -24,7 +36,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Main Dark & Red Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=36">
+  <link rel="stylesheet" href="css/style.css?v=38">
 </head>
 <body>
 
@@ -35,7 +47,7 @@
     <nav class="dynamic-island-nav" id="dynamicNav" aria-label="Main Navigation">
       <!-- Island Logo & Brand -->
       <a href="#home" class="island-brand" id="islandBrand" title="WAKO Chandigarh Kickboxing">
-        <img src="assets/logo.png" alt="WAKO Chandigarh Logo" class="island-logo-img">
+        <img src="assets/logo.png" alt="WAKO Chandigarh Logo" class="island-logo-img" decoding="async">
         <span class="island-brand-text">WAKO <span>CHANDIGARH</span></span>
       </a>
 
@@ -82,7 +94,7 @@
           muted 
           playsinline 
           webkit-playsinline 
-          preload="auto"
+          preload="metadata"
           poster="assets/hero_ring_spotlight.jpg"
         >
           <source src="assets/WAKO Chandigarh Hero 9x16.mp4" type="video/mp4" media="(max-width: 768px)">
@@ -142,7 +154,7 @@
           <!-- Hero Right Column: Athletic Cutout with Red Rope -->
           <div class="hero-visual" data-aos="zoom-in" data-aos-delay="300">
             <div class="hero-cutout-wrap">
-              <img src="assets/hero_athlete_rope.jpg" alt="Athletic Fitness Coach and Fighter with Red Battle Ropes" class="hero-cutout-img">
+              <img src="assets/hero_athlete_rope.jpg" alt="Athletic Fitness Coach and Fighter with Red Battle Ropes" class="hero-cutout-img" fetchpriority="high" decoding="async">
             </div>
 
             <!-- Floating Badges -->
@@ -180,14 +192,14 @@
           <!-- LEFT: 3 IMAGES SHOWCASE (Clean & Creative Collage) -->
           <div class="wako-trio-gallery">
             <div class="wako-gallery-main">
-              <img src="assets/sparring.jpg" alt="WAKO Kickboxing Sparring Action" class="wako-gallery-img">
+              <img src="assets/sparring.jpg" alt="WAKO Kickboxing Sparring Action" class="wako-gallery-img" loading="lazy" decoding="async">
             </div>
             <div class="wako-gallery-stacked">
               <div class="wako-gallery-sub">
-                <img src="assets/boxing_gloves.jpg" alt="Official Combat Gloves & Equipment" class="wako-gallery-img">
+                <img src="assets/boxing_gloves.jpg" alt="Official Combat Gloves & Equipment" class="wako-gallery-img" loading="lazy" decoding="async">
               </div>
               <div class="wako-gallery-sub">
-                <img src="assets/female_fighter.jpg" alt="Fighter Conditioning & Combat Form" class="wako-gallery-img">
+                <img src="assets/female_fighter.jpg" alt="Fighter Conditioning & Combat Form" class="wako-gallery-img" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -257,7 +269,7 @@
             <div>
               <div class="exec-card-header">
                 <div class="exec-avatar-frame">
-                  <img src="assets/president_adit_goel.jpg" alt="Adit Goel - President" class="exec-avatar-img">
+                  <img src="assets/president_adit_goel.jpg" alt="Adit Goel - President" class="exec-avatar-img" loading="lazy" decoding="async">
                   <span class="avatar-badge avatar-badge-president" title="President"><i class="fa-solid fa-crown"></i></span>
                 </div>
                 <div class="exec-header-info">
@@ -291,7 +303,7 @@
             <div>
               <div class="exec-card-header">
                 <div class="exec-avatar-frame">
-                  <img src="assets/vice_president_rudal_kumar.jpg" alt="Rudal Kumar - Vice President" class="exec-avatar-img">
+                  <img src="assets/vice_president_rudal_kumar.jpg" alt="Rudal Kumar - Vice President" class="exec-avatar-img" loading="lazy" decoding="async">
                   <span class="avatar-badge avatar-badge-vp" title="Vice President"><i class="fa-solid fa-star"></i></span>
                 </div>
                 <div class="exec-header-info">
@@ -325,7 +337,7 @@
             <div>
               <div class="exec-card-header">
                 <div class="exec-avatar-frame">
-                  <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh - General Secretary" class="exec-avatar-img">
+                  <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh - General Secretary" class="exec-avatar-img" loading="lazy" decoding="async">
                   <span class="avatar-badge avatar-badge-sec" title="General Secretary"><i class="fa-solid fa-bolt"></i></span>
                 </div>
                 <div class="exec-header-info">
@@ -388,7 +400,7 @@
 
         <!-- Cinematic Video Showcase Banner with Interactive Reel Experience -->
         <div class="cinematic-banner-wrap" id="cinematicBanner" data-aos="zoom-in" data-aos-duration="900">
-          <img src="assets/power_lab_video_thumb.jpg?v=1" alt="WAKO Kickboxing Musical Forms Showcase Reel" class="cinematic-banner-img">
+          <img src="assets/power_lab_video_thumb.jpg?v=1" alt="WAKO Kickboxing Musical Forms Showcase Reel" class="cinematic-banner-img" loading="lazy" decoding="async">
           
           <!-- Cinematic Lighting Overlays -->
           <div class="cinematic-overlay"></div>
@@ -489,7 +501,7 @@
           <!-- Center Visual: Athlete with Dumbbells -->
           <div class="why-center-visual" data-aos="zoom-in" data-aos-delay="200">
             <div class="why-center-img-wrap">
-              <img src="assets/wako_officials_delegation.jpg?v=1" alt="WAKO India Official Referees and Delegation Team">
+              <img src="assets/wako_officials_delegation.jpg?v=1" alt="WAKO India Official Referees and Delegation Team" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -582,7 +594,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/sparring.jpg" alt="Point Fighting Sparring" class="disc-card-img">
+                  <img src="assets/sparring.jpg" alt="Point Fighting Sparring" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Tatami Division</span>
                 </div>
                 <div class="disc-card-body">
@@ -602,7 +614,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/kids_martial_arts.jpg" alt="Light Contact Martial Arts" class="disc-card-img">
+                  <img src="assets/kids_martial_arts.jpg" alt="Light Contact Martial Arts" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Tatami Division</span>
                 </div>
                 <div class="disc-card-body">
@@ -622,7 +634,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/female_fighter.jpg" alt="Kick Light Division Athlete" class="disc-card-img">
+                  <img src="assets/female_fighter.jpg" alt="Kick Light Division Athlete" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Tatami Division</span>
                 </div>
                 <div class="disc-card-body">
@@ -642,7 +654,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/ring_action.jpg" alt="Full Contact Ring Kickboxing" class="disc-card-img">
+                  <img src="assets/ring_action.jpg" alt="Full Contact Ring Kickboxing" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Ring Sport</span>
                 </div>
                 <div class="disc-card-body">
@@ -662,7 +674,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/fighter_punch.jpg" alt="Low Kick Style Action" class="disc-card-img">
+                  <img src="assets/fighter_punch.jpg" alt="Low Kick Style Action" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Ring Sport</span>
                 </div>
                 <div class="disc-card-body">
@@ -682,7 +694,7 @@
             <div class="swiper-slide">
               <div class="discipline-card">
                 <div class="disc-card-img-wrap">
-                  <img src="assets/championship_belt.jpg" alt="K-1 Style Championship Belt" class="disc-card-img">
+                  <img src="assets/championship_belt.jpg" alt="K-1 Style Championship Belt" class="disc-card-img" loading="lazy" decoding="async">
                   <span class="disc-category-tag">Ring Sport</span>
                 </div>
                 <div class="disc-card-body">
@@ -746,7 +758,7 @@
               <!-- Coach 1: Rustampreet Singh -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_rustampreet.jpg">
-                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img">
+                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Rustampreet Singh</h4>
                   </div>
@@ -756,7 +768,7 @@
               <!-- Coach 2: Simranjeet Kaur -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_simranjeet.jpg">
-                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img">
+                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Simranjeet Kaur</h4>
                   </div>
@@ -766,7 +778,7 @@
               <!-- Coach 3: Vikramaditya Sharma -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_vikram.jpg">
-                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img">
+                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Vikramaditya Sharma</h4>
                   </div>
@@ -776,7 +788,7 @@
               <!-- Coach 4: Noah Anderson -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_noah.jpg">
-                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img">
+                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Noah Anderson</h4>
                   </div>
@@ -786,7 +798,7 @@
               <!-- Loop Duplicate Set: Rustampreet Singh -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_rustampreet.jpg">
-                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img">
+                  <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Rustampreet Singh</h4>
                   </div>
@@ -796,7 +808,7 @@
               <!-- Loop Duplicate Set: Simranjeet Kaur -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_simranjeet.jpg">
-                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img">
+                  <img src="assets/coach_simranjeet.jpg" alt="Coach Simranjeet Kaur" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Simranjeet Kaur</h4>
                   </div>
@@ -806,7 +818,7 @@
               <!-- Loop Duplicate Set: Vikramaditya Sharma -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_vikram.jpg">
-                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img">
+                  <img src="assets/coach_vikram.jpg" alt="Coach Vikramaditya Sharma" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Vikramaditya Sharma</h4>
                   </div>
@@ -816,7 +828,7 @@
               <!-- Loop Duplicate Set: Noah Anderson -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card coach-curved-card" data-img="assets/coach_noah.jpg">
-                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img">
+                  <img src="assets/coach_noah.jpg" alt="Coach Noah Anderson" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay coach-card-overlay">
                     <h4 class="coach-curved-name">Noah Anderson</h4>
                   </div>
@@ -876,7 +888,7 @@
 
             <!-- Poster 1: Landscape (Matching PAINTING AS THERAPY) -->
             <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/championship_belt.jpg" alt="State Championship Belt" class="poster-img">
+              <img src="assets/championship_belt.jpg" alt="State Championship Belt" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">WAKO TITLE</span>
                 <h3 class="poster-title-bold">STATE TITLE BELT</h3>
@@ -886,7 +898,7 @@
 
             <!-- Poster 2: Square/Portrait (Matching BASIC PHOTOGRAPHY) -->
             <div class="achieve-poster poster-square" data-aos="fade-up" data-aos-delay="150">
-              <img src="assets/boxing_gloves.jpg" alt="Golden Glove Striking Award" class="poster-img">
+              <img src="assets/boxing_gloves.jpg" alt="Golden Glove Striking Award" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag tag-accent">NATIONAL ROSTER</span>
                 <h3 class="poster-title-bold title-red">GOLDEN GLOVE</h3>
@@ -899,7 +911,7 @@
           <div class="achieve-col achieve-col-2">
             <!-- Poster 3: Tall Portrait (Matching FOOTBALL ATHLETE DAILY ROUTINE) -->
             <div class="achieve-poster poster-tall poster-athletic" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/hero_ring_spotlight.jpg" alt="Championship Ring Spotlights" class="poster-img">
+              <img src="assets/hero_ring_spotlight.jpg" alt="Championship Ring Spotlights" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-center">
                 <span class="poster-tag">OLYMPIC STAGE</span>
                 <h3 class="poster-title-impact">UNDEFEATED<br>IN THE RING</h3>
@@ -909,7 +921,7 @@
 
             <!-- Poster 4: Portrait (Matching MASTERING PUBLIC SPEAKING) -->
             <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="250">
-              <img src="assets/sparring.jpg" alt="Tatami Speed Sparring Record" class="poster-img">
+              <img src="assets/sparring.jpg" alt="Tatami Speed Sparring Record" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">POINT FIGHTING</span>
                 <h3 class="poster-title-editorial">TATAMI SPEED RECORD</h3>
@@ -922,7 +934,7 @@
           <div class="achieve-col achieve-col-3">
             <!-- Poster 5: Top Portrait with Script (Matching Basic Photography) -->
             <div class="achieve-poster poster-medium poster-script-wrap" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/rustam_portrait.jpg" alt="Head Coach Rustampreet Singh" class="poster-img">
+              <img src="assets/rustam_portrait.jpg" alt="Head Coach Rustampreet Singh" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-top">
                 <span class="poster-script-tag">General Secretary</span>
                 <h3 class="poster-title-script">Leading Chandigarh</h3>
@@ -932,7 +944,7 @@
 
             <!-- Poster 6: Middle Portrait (Matching BUILDING A BUSINESS) -->
             <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="350">
-              <img src="assets/dumbbell_athlete.jpg" alt="Elite Strength & Conditioning" class="poster-img">
+              <img src="assets/dumbbell_athlete.jpg" alt="Elite Strength & Conditioning" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-center">
                 <span class="poster-tag">ATHLETIC PEAK</span>
                 <h3 class="poster-title-bold title-accent">STRENGTH &amp;<br>ENDURANCE</h3>
@@ -942,7 +954,7 @@
 
             <!-- Poster 7: Bottom Tall Portrait (Matching What happens if you do workout 30 days) -->
             <div class="achieve-poster poster-tall" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/deadlift_banner.jpg" alt="Power Biomechanics" class="poster-img">
+              <img src="assets/deadlift_banner.jpg" alt="Power Biomechanics" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">BIOMECHANICS</span>
                 <h3 class="poster-title-modern">POWER BEHIND THE PUNCH</h3>
@@ -955,7 +967,7 @@
           <div class="achieve-col achieve-col-4">
             <!-- Poster 8: Portrait (Matching Finance is Not Scary) -->
             <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="450">
-              <img src="assets/arena_crowd.jpg" alt="Championship Stadium Crowd" class="poster-img">
+              <img src="assets/arena_crowd.jpg" alt="Championship Stadium Crowd" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">3,000+ FANS</span>
                 <h3 class="poster-title-bold">ARENA PACKED CROWDS</h3>
@@ -965,7 +977,7 @@
 
             <!-- Poster 9: Middle Landscape (Matching THE MAN BEHIND THE KITCHEN) -->
             <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="500">
-              <img src="assets/ring_action.jpg" alt="Full Contact Title Bout" class="poster-img">
+              <img src="assets/ring_action.jpg" alt="Full Contact Title Bout" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag tag-accent">LOW KICK FINALS</span>
                 <h3 class="poster-title-impact title-gold">STATE CHAMPION</h3>
@@ -975,7 +987,7 @@
 
             <!-- Poster 10: Bottom Portrait (Matching BASIC BAKING) -->
             <div class="achieve-poster poster-medium" data-aos="fade-up" data-aos-delay="550">
-              <img src="assets/kids_martial_arts.jpg" alt="Cadet National Podium" class="poster-img">
+              <img src="assets/kids_martial_arts.jpg" alt="Cadet National Podium" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">YOUTH MEDALISTS</span>
                 <h3 class="poster-title-bold">CADET PODIUM</h3>
@@ -988,7 +1000,7 @@
           <div class="achieve-col achieve-col-5">
             <!-- Poster 11: Top Portrait (Matching Daily Life of Barista) -->
             <div class="achieve-poster poster-tall" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/female_fighter.jpg" alt="Women In Kickboxing Glory" class="poster-img">
+              <img src="assets/female_fighter.jpg" alt="Women In Kickboxing Glory" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-script-tag">Women Division</span>
                 <h3 class="poster-title-bold title-red">NATIONAL PODIUM</h3>
@@ -998,7 +1010,7 @@
 
             <!-- Poster 12: Middle Landscape (Matching STARTING TENNIS) -->
             <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="650">
-              <img src="assets/fighter_punch.jpg" alt="Knockout Finish" class="poster-img">
+              <img src="assets/fighter_punch.jpg" alt="Knockout Finish" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">HOOK FINISH</span>
                 <h3 class="poster-title-impact">KO OF THE YEAR</h3>
@@ -1008,7 +1020,7 @@
 
             <!-- Poster 13: Bottom Landscape (Matching WHAT I LOVE ABOUT CYCLING) -->
             <div class="achieve-poster poster-landscape" data-aos="fade-up" data-aos-delay="700">
-              <img src="assets/hero_kickbox.jpg" alt="Cardio & Battle Rope Stamina" class="poster-img">
+              <img src="assets/hero_kickbox.jpg" alt="Cardio & Battle Rope Stamina" class="poster-img" loading="lazy" decoding="async">
               <div class="poster-overlay poster-overlay-bottom">
                 <span class="poster-tag">ENDURANCE</span>
                 <h3 class="poster-title-editorial">COMBAT STAMINA</h3>
@@ -1052,7 +1064,7 @@
               <!-- Slide 1: Tatami Match Action -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (1).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (1).jpeg" alt="Tatami Championship Bout Officiating" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (1).jpeg" alt="Tatami Championship Bout Officiating" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Tatami Championship</span>
                     <h4>National Bout Action</h4>
@@ -1065,7 +1077,7 @@
               <!-- Slide 2: Khelo India ASMITA Zonal League -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.17 PM.jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.17 PM.jpeg" alt="Khelo India ASMITA Kickboxing Zonal League Team" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.17 PM.jpeg" alt="Khelo India ASMITA Kickboxing Zonal League Team" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Khelo India League</span>
                     <h4>ASMITA Zonal Team</h4>
@@ -1078,7 +1090,7 @@
               <!-- Slide 3: Podium Victory Odisha -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (2).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (2).jpeg" alt="National Championship Podium Medal Ceremony" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (2).jpeg" alt="National Championship Podium Medal Ceremony" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Podium Glory</span>
                     <h4>National Medal Ceremony</h4>
@@ -1091,7 +1103,7 @@
               <!-- Slide 4: Official Referee Certification -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM.jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM.jpeg" alt="Coach Rustampreet Singh National Referee Certification" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM.jpeg" alt="Coach Rustampreet Singh National Referee Certification" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Official Certification</span>
                     <h4>National Referee Diploma</h4>
@@ -1104,7 +1116,7 @@
               <!-- Slide 5: Match Decision & Fair Play -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM.jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM.jpeg" alt="Tatami Bout Decision & Winner Declaration" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM.jpeg" alt="Tatami Bout Decision & Winner Declaration" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Match Decision</span>
                     <h4>Tatami Champion Verdict</h4>
@@ -1117,7 +1129,7 @@
               <!-- Slide 6: 13th National High Performance Camp -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM.jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM.jpeg" alt="13th National Kickboxing High Performance Training Camp" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM.jpeg" alt="13th National Kickboxing High Performance Training Camp" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">High Performance Camp</span>
                     <h4>13th National Camp</h4>
@@ -1130,7 +1142,7 @@
               <!-- Slide 7: Senior World Cup Selection -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM (1).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM (1).jpeg" alt="Yadwinder Singh Selected for Senior World Cup Uzbekistan" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.19 PM (1).jpeg" alt="Yadwinder Singh Selected for Senior World Cup Uzbekistan" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">World Cup Bound</span>
                     <h4>Senior World Cup Selection</h4>
@@ -1143,7 +1155,7 @@
               <!-- Slide 8: State Champions Medalists -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (1).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (1).jpeg" alt="State Champions Medalists on Podium" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.18 PM (1).jpeg" alt="State Champions Medalists on Podium" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">State Champions</span>
                     <h4>National Medal Ceremony</h4>
@@ -1156,7 +1168,7 @@
               <!-- Slide 9: Team India Kit Felicitation -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (2).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (2).jpeg" alt="WAKO India Open International Cup 2026 Kit Presentation" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.20 PM (2).jpeg" alt="WAKO India Open International Cup 2026 Kit Presentation" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">International Cup</span>
                     <h4>Team India Felicitation</h4>
@@ -1169,7 +1181,7 @@
               <!-- Slide 10: Ring Stadium Dignitaries -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM (1).jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM (1).jpeg" alt="Coach Rustampreet Singh with International Delegation at Championship Ring" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM (1).jpeg" alt="Coach Rustampreet Singh with International Delegation at Championship Ring" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Championship Arena</span>
                     <h4>Global Delegation</h4>
@@ -1182,7 +1194,7 @@
               <!-- Slide 11: International Arena Stage -->
               <div class="swiper-slide curved-slide">
                 <div class="curved-gallery-card" data-img="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM.jpeg">
-                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM.jpeg" alt="WAKO India Championship Arena Spotlight" class="curved-gallery-img">
+                  <img src="assets/Gallery Images/WhatsApp Image 2026-10-17 at 3.51.21 PM.jpeg" alt="WAKO India Championship Arena Spotlight" class="curved-gallery-img" loading="lazy" decoding="async">
                   <div class="curved-card-overlay">
                     <span class="card-tag">Arena Spotlight</span>
                     <h4>WAKO Arena Stage</h4>
@@ -1817,7 +1829,7 @@
 
             <div>
               <div class="podcast-hosts">
-                <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh" class="podcast-host-img">
+                <img src="assets/coach_rustampreet.jpg" alt="Rustampreet Singh" class="podcast-host-img" loading="lazy" decoding="async">
                 <div class="podcast-host-meta">
                   <h5 style="color:#fff; font-size:1.05rem;">Rustampreet Singh</h5>
                   <p style="color:var(--text-muted); font-size:0.85rem;">Host & WAKO Chandigarh Head Coach</p>
@@ -1858,7 +1870,7 @@
                    data-title="The Real Side of Sports Ft. Manjot Longia | Episode 02" 
                    data-desc="Head Coach Rustampreet Singh hosts Manjot Longia to discuss grassroots sports development, championship preparation, and martial arts reality."
                    data-ep="01">
-                <img src="assets/podcast_yt_Cl8n0r7r9uo.jpg" alt="The Real Side of Sports Ft. Manjot Longia" class="podcast-card-bg-img">
+                <img src="assets/podcast_yt_Cl8n0r7r9uo.jpg" alt="The Real Side of Sports Ft. Manjot Longia" class="podcast-card-bg-img" loading="lazy" decoding="async">
                 <div class="podcast-card-top-pill">
                   <span class="podcast-ep-badge"><i class="fa-brands fa-youtube"></i> YouTube Episode</span>
                   <span class="podcast-duration-badge"><i class="fa-solid fa-play"></i> Full Video</span>
@@ -1885,7 +1897,7 @@
                    data-title="Elite Mindset: Inside the World of Football & Athletic Coaching" 
                    data-desc="Special podcast exploring athletic conditioning crossover between football and combat sports, tactical discipline, and building a winning mindset."
                    data-ep="02">
-                <img src="assets/podcast_yt_NC02y0yh40s.jpg" alt="Elite Mindset: Inside the World of Football" class="podcast-card-bg-img">
+                <img src="assets/podcast_yt_NC02y0yh40s.jpg" alt="Elite Mindset: Inside the World of Football" class="podcast-card-bg-img" loading="lazy" decoding="async">
                 <div class="podcast-card-top-pill">
                   <span class="podcast-ep-badge"><i class="fa-brands fa-youtube"></i> YouTube Episode</span>
                   <span class="podcast-duration-badge"><i class="fa-solid fa-play"></i> Full Video</span>
@@ -1912,7 +1924,7 @@
                    data-title="National Sports Games & Technical Leadership Talks" 
                    data-desc="Coach Rustampreet Singh conducts on-ground interviews with national sports officials on infrastructure and competitive standards."
                    data-ep="03">
-                <img src="assets/podcast_reel_DVnBqw1Sd9a.jpg" alt="National Sports Games & Leadership Talks" class="podcast-card-bg-img">
+                <img src="assets/podcast_reel_DVnBqw1Sd9a.jpg" alt="National Sports Games & Leadership Talks" class="podcast-card-bg-img" loading="lazy" decoding="async">
                 <div class="podcast-card-top-pill">
                   <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
                   <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
@@ -1939,7 +1951,7 @@
                    data-title="WAKO National Kickboxing Championship Referee Insights" 
                    data-desc="Behind the scenes at the National Kickboxing Championship with official WAKO refereeing protocols and competition insights."
                    data-ep="04">
-                <img src="assets/podcast_reel_DdszbnICD7c.jpg" alt="WAKO National Kickboxing Championship Insights" class="podcast-card-bg-img">
+                <img src="assets/podcast_reel_DdszbnICD7c.jpg" alt="WAKO National Kickboxing Championship Insights" class="podcast-card-bg-img" loading="lazy" decoding="async">
                 <div class="podcast-card-top-pill">
                   <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
                   <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
@@ -1966,7 +1978,7 @@
                    data-title="SAI Athlete Mentorship & Sports Excellence Byte" 
                    data-desc="Live conversation highlighting athlete mentorship, rigorous daily training habits, and youth dedication at top sports academies."
                    data-ep="05">
-                <img src="assets/podcast_reel_DWp3fePkp7i.jpg" alt="SAI Athlete Mentorship & Sports Excellence Byte" class="podcast-card-bg-img">
+                <img src="assets/podcast_reel_DWp3fePkp7i.jpg" alt="SAI Athlete Mentorship & Sports Excellence Byte" class="podcast-card-bg-img" loading="lazy" decoding="async">
                 <div class="podcast-card-top-pill">
                   <span class="podcast-ep-badge" style="background: linear-gradient(135deg, #e1306c, #c13584);"><i class="fa-brands fa-instagram"></i> Instagram Reel</span>
                   <span class="podcast-duration-badge"><i class="fa-solid fa-bolt"></i> Reel Byte</span>
@@ -2142,7 +2154,7 @@
           <div class="whatsapp-hub-card">
             <div class="whatsapp-hub-header">
               <div class="whatsapp-avatar-wrap">
-                <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="whatsapp-avatar-img">
+                <img src="assets/coach_rustampreet.jpg" alt="Coach Rustampreet Singh" class="whatsapp-avatar-img" loading="lazy" decoding="async">
                 <span class="whatsapp-status-indicator" title="Online on WhatsApp"></span>
               </div>
               <div class="whatsapp-hub-info">
@@ -2302,7 +2314,7 @@
         <!-- Col 1: Brand -->
         <div class="footer-col">
           <div style="display:flex; align-items:center; gap:0.9rem; margin-bottom:1.2rem;">
-            <img src="assets/logo.png" alt="WAKO Logo" style="width:48px; height:48px;">
+            <img src="assets/logo.png" alt="WAKO Logo" style="width:48px; height:48px;" decoding="async">
             <h3 class="footer-brand-title" style="margin:0;">WAKO <span class="text-red">CHANDIGARH</span></h3>
           </div>
           <p class="footer-brand-desc">
@@ -2392,7 +2404,7 @@
     <div class="athlete-pass-card">
       <div class="pass-header">
         <div class="pass-header-info">
-          <img src="assets/logo.png" alt="WAKO Badge" class="pass-logo">
+          <img src="assets/logo.png" alt="WAKO Badge" class="pass-logo" decoding="async">
           <div>
             <h4 style="color:#fff;">WAKO CHANDIGARH</h4>
             <p style="font-size:0.8rem; color:var(--text-muted);">Official Athlete Championship Pass</p>
@@ -2450,7 +2462,7 @@
        =================================================================== -->
   <div id="lightboxModal">
     <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
-    <img id="lightboxImg" src="" alt="Championship Photo Zoom">
+    <img id="lightboxImg" src="" alt="Championship Photo Zoom" loading="lazy" decoding="async">
   </div>
 
   <!-- Back To Top Button -->
@@ -2514,8 +2526,8 @@
   <!-- ===================================================================
        SCRIPTS (Swiper 11, AOS & Main JS)
        =================================================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="js/main.js?v=20"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script src="js/main.js?v=25" defer></script>
 </body>
 </html>

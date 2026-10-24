@@ -62,21 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
       AOS.refresh();
     });
 
-    [300, 700, 1500, 3000].forEach((delayMs) => {
-      setTimeout(() => {
-        if (typeof AOS !== 'undefined') AOS.refresh();
-      }, delayMs);
-    });
-
+    let aosResizeTimer;
     window.addEventListener('resize', () => {
-      if (typeof AOS !== 'undefined') AOS.refresh();
-    });
+      clearTimeout(aosResizeTimer);
+      aosResizeTimer = setTimeout(() => {
+        if (typeof AOS !== 'undefined') AOS.refresh();
+      }, 200);
+    }, { passive: true });
 
     window.addEventListener('orientationchange', () => {
       setTimeout(() => {
         if (typeof AOS !== 'undefined') AOS.refresh();
       }, 350);
-    });
+    }, { passive: true });
   }
 
   // 2. Initialize Hero Video Background Controls & Telemetry
@@ -215,27 +213,34 @@ function initHeroVideoControls() {
   video.setAttribute('webkit-playsinline', '');
   video.setAttribute('muted', '');
 
-  // Set initial video according to viewport (Mobile 9x16 vs Desktop)
-  applyHeroVideoSource();
+  // Set initial video smoothly without blocking critical initial render & first paint
+  const startVideoPlayback = () => {
+    applyHeroVideoSource();
+    const startPromise = video.play();
+    if (startPromise !== undefined) {
+      startPromise
+        .then(() => {
+          // Will activate cleanly on first frame via timeupdate/playing
+        })
+        .catch(() => {
+          fallbackToText();
+          // If browser requires user interaction first, unlock on initial user touch/click
+          const userUnlock = () => {
+            video.muted = true;
+            video.play().then(activateVideoHero).catch(() => {});
+            window.removeEventListener('click', userUnlock);
+            window.removeEventListener('touchstart', userUnlock);
+          };
+          window.addEventListener('click', userUnlock, { once: true, passive: true });
+          window.addEventListener('touchstart', userUnlock, { once: true, passive: true });
+        });
+    }
+  };
 
-  const startPromise = video.play();
-  if (startPromise !== undefined) {
-    startPromise
-      .then(() => {
-        // Will activate cleanly on first frame via timeupdate/playing
-      })
-      .catch(() => {
-        fallbackToText();
-        // If browser requires user interaction first, unlock on initial user touch/click
-        const userUnlock = () => {
-          video.muted = true;
-          video.play().then(activateVideoHero).catch(() => {});
-          window.removeEventListener('click', userUnlock);
-          window.removeEventListener('touchstart', userUnlock);
-        };
-        window.addEventListener('click', userUnlock, { once: true });
-        window.addEventListener('touchstart', userUnlock, { once: true });
-      });
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(startVideoPlayback, { timeout: 600 });
+  } else {
+    setTimeout(startVideoPlayback, 120);
   }
 
   // Handle dynamic resize/orientation change between mobile and desktop
